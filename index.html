@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ontario Budget 2026 — Independent Analysis · Kim Leclerc</title>
+<meta name="description" content="Independent bilingual analysis of the Ontario Budget 2026-2027. Sector briefings, audience guides and stakeholder notes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --forest:#1B4332;
+  --forest-deep:#0D2B1F;
+  --forest-mid:#2D6A4F;
+  --sage:#52B788;
+  --sage-pale:#D8F3DC;
+  --cream:#F9F7F2;
+  --cream-dark:#F0EDE6;
+  --gold:#B8956A;
+  --gold-pale:#EAD9C3;
+  --text:#1C2B22;
+  --muted:#5A7060;
+  --border:#D5E8DC;
+  --red:#C0392B;
+  --green:#1A6B3C;
+  --font-display:'Fraunces',Georgia,serif;
+  --font-ui:'Inter',system-ui,sans-serif;
+  --r:6px;
+  --r-lg:12px;
+  --shadow:0 2px 16px rgba(27,67,50,0.09);
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-ui);background:var(--cream);color:var(--text);font-size:16px;line-height:1.65}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:var(--forest-deep);border-bottom:2px solid var(--gold)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:12px;height:58px}
+.nav-logo{font-family:var(--font-display);font-weight:700;font-size:1rem;color:#fff;text-decoration:none;display:flex;align-items:center;gap:8px;white-space:nowrap}
+.nav-logo svg{flex-shrink:0}
+.nav-tagline{font-size:0.7rem;color:rgba(255,255,255,0.38);letter-spacing:0.1em;text-transform:uppercase;display:none}
+@media(min-width:640px){.nav-tagline{display:block}}
+.nav-sep{flex:1}
+.nav-links{display:flex;gap:2px;list-style:none}
+.nav-links a{font-size:0.78rem;font-weight:500;color:rgba(255,255,255,0.6);text-decoration:none;padding:5px 9px;border-radius:var(--r);transition:all 0.2s}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,0.1)}
+@media(max-width:860px){.nav-links{display:none}}
+.lang-toggle{display:flex;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.18);border-radius:30px;overflow:hidden}
+.lang-btn{padding:5px 13px;font-family:var(--font-ui);font-size:0.75rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;border:none;background:transparent;color:rgba(255,255,255,0.55);cursor:pointer;transition:all 0.2s}
+.lang-btn.active{background:var(--gold);color:#1C2B22}
+
+/* HERO */
+.hero{background:var(--forest-deep);padding:64px 24px 52px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 59px,rgba(255,255,255,0.025) 59px,rgba(255,255,255,0.025) 60px),repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(255,255,255,0.025) 59px,rgba(255,255,255,0.025) 60px)}
+.trillium-bg{position:absolute;right:-40px;top:-40px;width:340px;height:340px;opacity:0.04;pointer-events:none}
+.hero-inner{max-width:880px;margin:0 auto;position:relative}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(184,149,106,0.15);border:1px solid rgba(184,149,106,0.35);color:var(--gold-pale);font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:5px 14px;border-radius:99px;margin-bottom:20px}
+.live-dot{width:6px;height:6px;border-radius:50%;background:var(--sage);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
+.hero-title{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.4rem);font-weight:700;color:#fff;line-height:1.1;margin-bottom:10px}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:0.92rem;color:rgba(255,255,255,0.5);margin-bottom:28px}
+.hero-sub strong{color:rgba(255,255,255,0.75)}
+.search-wrap{max-width:520px;position:relative}
+.search-wrap input{width:100%;padding:12px 16px 12px 44px;background:rgba(255,255,255,0.09);border:1px solid rgba(255,255,255,0.18);border-radius:40px;outline:none;font-family:var(--font-ui);font-size:0.92rem;color:#fff;transition:all 0.2s}
+.search-wrap input::placeholder{color:rgba(255,255,255,0.35)}
+.search-wrap input:focus{background:rgba(255,255,255,0.13);border-color:var(--gold)}
+.search-icon{position:absolute;left:15px;top:50%;transform:translateY(-50%);opacity:0.4;pointer-events:none}
+#searchInfo{font-size:0.8rem;color:rgba(255,255,255,0.45);margin-top:8px;min-height:20px}
+.hero-quote{margin-top:28px;padding:18px 22px;border-left:3px solid var(--gold);background:rgba(255,255,255,0.05);border-radius:0 var(--r-lg) var(--r-lg) 0;max-width:640px}
+.hero-quote blockquote{font-family:var(--font-display);font-style:italic;font-size:1.05rem;color:rgba(255,255,255,0.88);line-height:1.6;margin-bottom:6px}
+.hero-quote cite{font-size:0.76rem;color:var(--gold);font-style:normal;font-weight:600;letter-spacing:0.04em}
+
+/* SECTION NAV */
+#secNav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:58px;z-index:90;overflow-x:auto}
+#secNav::-webkit-scrollbar{display:none}
+.secnav-inner{display:flex;max-width:1200px;margin:0 auto;padding:0 24px}
+.snbtn{padding:13px 14px;background:none;border:none;border-bottom:2.5px solid transparent;font-family:var(--font-ui);font-size:0.8rem;font-weight:600;letter-spacing:0.02em;color:var(--muted);cursor:pointer;white-space:nowrap;transition:all 0.2s}
+.snbtn:hover{color:var(--forest)}
+.snbtn.active{color:var(--forest);border-bottom-color:var(--forest)}
+
+/* MAIN */
+main{max-width:1200px;margin:0 auto;padding:40px 24px 80px}
+section{margin-bottom:60px;scroll-margin-top:115px}
+.sec-head{margin-bottom:24px}
+.sec-title{font-family:var(--font-display);font-size:1.7rem;font-weight:600;color:var(--forest);line-height:1.2}
+.sec-title::after{content:'';display:block;width:32px;height:3px;background:var(--gold);border-radius:2px;margin-top:8px}
+.sec-sub{font-size:0.88rem;color:var(--muted);margin-top:8px;line-height:1.55}
+
+/* PLACEHOLDER */
+.placeholder{background:#fff;border:2px dashed var(--border);border-radius:var(--r-lg);padding:48px 32px;text-align:center}
+.ph-icon{font-size:2.8rem;margin-bottom:16px;opacity:0.35}
+.ph-title{font-family:var(--font-display);font-size:1.4rem;color:var(--forest);margin-bottom:8px}
+.ph-date{display:inline-block;background:var(--forest);color:#fff;padding:6px 20px;border-radius:30px;font-weight:600;font-size:0.85rem;margin-top:12px}
+.ph-note{font-size:0.85rem;color:var(--muted);max-width:400px;margin:0 auto}
+
+/* CHIFFRES */
+.chiffres-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.chiffre{background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);padding:20px 22px;position:relative;overflow:hidden;transition:transform 0.2s,box-shadow 0.2s}
+.chiffre:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.chiffre::after{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.chiffre.up::after{background:var(--green)}
+.chiffre.down::after{background:var(--red)}
+.chiffre.neutral::after{background:var(--gold)}
+.c-label{font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:6px}
+.c-val{font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--forest);line-height:1.1;margin-bottom:4px}
+.c-note{font-size:0.76rem;color:var(--muted)}
+.c-var{font-size:0.72rem;margin-top:8px;padding:3px 8px;border-radius:20px;display:inline-block}
+.up .c-var{background:#E8F5EE;color:var(--green)}
+.down .c-var{background:#FDECEA;color:var(--red)}
+.neutral .c-var{background:#FAF3E8;color:#7A5C2A}
+
+/* SECTEURS */
+.secteurs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+.secteur{background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);padding:22px;cursor:pointer;transition:all 0.2s}
+.secteur:hover{border-color:var(--forest-mid);box-shadow:var(--shadow);transform:translateY(-2px)}
+.secteur-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;gap:10px}
+.secteur-titre{font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:var(--forest);line-height:1.25;flex:1}
+.pbadge{font-size:0.65rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:3px 8px;border-radius:20px;flex-shrink:0}
+.pbadge.high{background:var(--gold-pale);color:#7A5C2A}
+.pbadge.medium,.pbadge.moyenne{background:var(--sage-pale);color:#1A6B3C}
+.secteur-spend{font-size:0.78rem;font-weight:600;color:var(--forest-mid);margin-bottom:8px}
+.secteur-resume{font-size:0.83rem;color:var(--muted);line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px}
+.tag{font-size:0.68rem;padding:2px 8px;background:var(--cream-dark);border:1px solid var(--border);border-radius:20px;color:var(--muted)}
+
+/* AUDIENCES */
+.audiences-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.audience{background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);padding:22px}
+.aud-titre{font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--forest);margin-bottom:8px}
+.aud-resume{font-size:0.83rem;color:var(--muted);line-height:1.55;margin-bottom:14px}
+.mesure{display:flex;justify-content:space-between;align-items:flex-start;padding:8px 0;border-top:1px solid var(--border);gap:8px}
+.mesure-label{font-size:0.78rem;color:var(--muted);flex:1;line-height:1.4}
+.mesure-val{font-size:0.82rem;font-weight:600;color:var(--forest-mid);white-space:nowrap}
+
+/* PARTIES PRENANTES */
+.pp-list{display:flex;flex-direction:column;gap:14px}
+.pp{background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);padding:24px}
+.pp-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:10px}
+.pp-titre{font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:var(--forest)}
+.pp-resume{font-size:0.88rem;color:var(--text);line-height:1.65;margin-bottom:12px}
+.pp-enjeux{list-style:none}
+.pp-enjeux li{font-size:0.82rem;color:var(--muted);padding:7px 0 7px 18px;border-top:1px solid var(--border);position:relative;line-height:1.5}
+.pp-enjeux li::before{content:'▸';position:absolute;left:0;color:var(--sage);font-size:0.72rem;top:9px}
+
+/* COMPARAISON */
+.comp-wrap{overflow-x:auto;border-radius:var(--r-lg);border:1px solid var(--border)}
+.comp-table{width:100%;border-collapse:collapse;background:#fff}
+.comp-table th{background:var(--forest);color:#fff;padding:12px 18px;text-align:left;font-size:0.78rem;font-weight:600;letter-spacing:0.04em}
+.comp-table td{padding:11px 18px;border-top:1px solid var(--border);font-size:0.85rem}
+.comp-table tr:hover td{background:var(--cream)}
+.dir{font-size:1rem;font-weight:700}
+.dir.up{color:var(--green)}
+.dir.down{color:var(--red)}
+.dir.neutral{color:var(--gold)}
+
+/* GLOSSAIRE */
+.glossaire-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.glossaire-item{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:16px 18px}
+.g-terme{font-weight:600;font-size:0.85rem;color:var(--forest);margin-bottom:5px}
+.g-def{font-size:0.8rem;color:var(--muted);line-height:1.6}
+
+/* NOTEBOOK SECTION */
+.notebook-section{background:var(--forest-deep);border-radius:var(--r-lg);padding:48px 40px;color:#fff}
+.notebook-intro{text-align:center;margin-bottom:36px}
+.nb-eyebrow{display:inline-flex;align-items:center;gap:6px;background:rgba(184,149,106,0.15);border:1px solid rgba(184,149,106,0.3);color:var(--gold-pale);font-size:0.68rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;border-radius:99px;margin-bottom:14px}
+.nb-title{font-family:var(--font-display);font-size:clamp(1.4rem,3vw,2rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:10px}
+.nb-title em{font-style:italic;color:var(--gold)}
+.nb-sub{font-size:0.9rem;color:rgba(255,255,255,0.55);max-width:520px;margin:0 auto;line-height:1.65}
+.nb-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:32px}
+.nb-card{background:rgba(255,255,255,0.06);border:1px solid rgba(184,149,106,0.2);border-radius:10px;padding:20px}
+.nb-card-icon{font-size:1.4rem;margin-bottom:10px}
+.nb-card-title{font-family:var(--font-display);font-size:0.9rem;font-weight:600;color:#fff;margin-bottom:6px}
+.nb-card-text{font-size:0.78rem;color:rgba(255,255,255,0.48);line-height:1.55}
+.nb-steps{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:18px 22px;margin-bottom:28px}
+.nb-steps-label{font-size:0.7rem;font-weight:700;color:var(--gold);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:14px}
+.nb-steps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.nb-step{display:flex;gap:10px;align-items:flex-start}
+.nb-step-num{background:var(--gold);color:var(--forest-deep);font-family:var(--font-ui);font-weight:700;font-size:0.72rem;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.nb-step-text{font-size:0.8rem;color:rgba(255,255,255,0.6);line-height:1.5}
+.nb-cta{text-align:center}
+.nb-btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--forest-deep);font-family:var(--font-display);font-weight:700;font-size:1rem;padding:15px 36px;border-radius:8px;text-decoration:none;transition:opacity 0.2s}
+.nb-btn:hover{opacity:0.88}
+.nb-note{font-size:0.72rem;color:rgba(255,255,255,0.28);margin-top:10px}
+
+/* SUBSTACK */
+.substack-block{background:var(--forest);border-radius:var(--r-lg);padding:40px;text-align:center;color:#fff;margin-top:14px}
+.sub-title{font-family:var(--font-display);font-size:1.4rem;font-weight:600;margin-bottom:8px}
+.sub-note{font-size:0.88rem;color:rgba(255,255,255,0.55);margin-bottom:20px}
+.sub-btn{display:inline-block;background:var(--gold);color:var(--forest-deep);font-weight:700;font-size:0.9rem;padding:12px 28px;border-radius:30px;text-decoration:none;transition:opacity 0.2s}
+.sub-btn:hover{opacity:0.88}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.about-grid{grid-template-columns:1fr}}
+.about-card{background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);padding:22px}
+.about-card h4{font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--forest);margin-bottom:8px}
+.about-card p,.about-card a{font-size:0.83rem;color:var(--muted);line-height:1.6}
+.about-card a{color:var(--forest-mid);text-decoration:none}
+.about-card a:hover{text-decoration:underline}
+.social-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.soc-link{display:inline-flex;align-items:center;gap:5px;font-size:0.75rem;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--border);border-radius:20px;color:var(--muted);text-decoration:none;transition:all 0.2s}
+.soc-link:hover{border-color:var(--forest-mid);color:var(--forest)}
+
+/* MODAL */
+#modal{display:none;position:fixed;inset:0;z-index:200;background:rgba(0,0,0,0.5);backdrop-filter:blur(4px);align-items:flex-start;justify-content:center;padding:32px 16px;overflow-y:auto}
+#modal.open{display:flex}
+.modal-box{background:#fff;border-radius:var(--r-lg);width:100%;max-width:680px;padding:32px;position:relative;animation:mIn 0.2s ease}
+@keyframes mIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.modal-close{position:absolute;top:14px;right:14px;width:30px;height:30px;border-radius:50%;border:1px solid var(--border);background:var(--cream);cursor:pointer;font-size:0.9rem;color:var(--muted);display:flex;align-items:center;justify-content:center;transition:all 0.2s}
+.modal-close:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.m-titre{font-family:var(--font-display);font-size:1.35rem;font-weight:700;color:var(--forest);margin-bottom:4px}
+.m-meta{display:flex;gap:14px;font-size:0.78rem;color:var(--muted);margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.m-resume{font-size:0.92rem;color:var(--text);line-height:1.7;margin-bottom:16px}
+.m-points{list-style:none;margin-bottom:16px}
+.m-points li{font-size:0.85rem;color:var(--text);padding:9px 0 9px 20px;border-bottom:1px solid var(--border);position:relative;line-height:1.55}
+.m-points li::before{content:'→';position:absolute;left:0;color:var(--sage);font-weight:700}
+.m-points li:last-child{border-bottom:none}
+
+/* FOOTER */
+footer{background:var(--forest-deep);color:rgba(255,255,255,0.4);padding:20px 24px;text-align:center;font-size:0.75rem;border-top:2px solid var(--gold)}
+footer a{color:var(--gold);text-decoration:none}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  main{padding:24px 16px 60px}
+  nav .nav-inner{padding:0 16px}
+  .hero{padding:40px 16px 40px}
+  .notebook-section{padding:32px 20px}
+  .substack-block{padding:28px 20px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="https://kimleclerc.ca">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)">
+        <path d="M12 2C12 2 9 7 5 8C7 8 8 9 8 11C8 11 6 10 4 11C6 12 7 14 8 16C9 18 10 20 12 22C14 20 15 18 16 16C17 14 18 12 20 11C18 10 16 11 16 11C16 9 17 8 19 8C15 7 12 2 12 2Z"/>
+      </svg>
+      <span id="navTitle">Ontario Budget 2026</span>
+    </a>
+    <span class="nav-tagline" id="navTagline">Independent Analysis</span>
+    <div class="nav-sep"></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sec-chiffres" id="nl-chiffres">Numbers</a></li>
+      <li><a href="#sec-secteurs" id="nl-secteurs">Sectors</a></li>
+      <li><a href="#sec-audiences" id="nl-audiences">For You</a></li>
+      <li><a href="#sec-pp" id="nl-pp">Stakeholders</a></li>
+      <li><a href="#sec-notebook" id="nl-notebook" style="color:var(--gold)">Notebook</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btnEN" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="btnFR" onclick="setLang('fr')">FR</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <svg class="trillium-bg" viewBox="0 0 200 200" fill="white">
+    <path d="M100 10C100 10 75 60 30 70C55 70 65 85 65 105C65 105 45 90 20 105C45 115 55 140 65 160C75 180 85 195 100 210C115 195 125 180 135 160C145 140 155 115 180 105C155 90 135 105 135 105C135 85 145 70 170 70C125 60 100 10 100 10Z"/>
+  </svg>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <span class="live-dot" id="heroDot"></span>
+      <span id="heroEyebrow">Ontario · March 25, 2026</span>
+    </div>
+    <h1 class="hero-title" id="heroTitle">Ontario Budget<br><em>2026</em></h1>
+    <p class="hero-sub" id="heroSub">By <strong>Peter Bethlenfalvy</strong> · Independent analysis by Kim Leclerc</p>
+    <div class="search-wrap">
+      <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="searchInput" oninput="doSearch(this.value)" placeholder="Search sectors, measures…">
+    </div>
+    <div id="searchInfo"></div>
+    <div class="hero-quote" id="heroQuote">
+      <blockquote id="quoteText"></blockquote>
+      <cite id="quoteCite"></cite>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION NAV -->
+<div id="secNav">
+  <div class="secnav-inner" id="secNavInner"></div>
+</div>
+
+<!-- MAIN -->
+<main id="mainContent"></main>
+
+<!-- MODAL -->
+<div id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <a href="https://kimleclerc.ca">kimleclerc.ca</a> ·
+    <a href="https://kimleclerc.substack.com">Substack</a> ·
+    <a href="https://x.com/kimleclerc">X</a> ·
+    <a href="https://linkedin.com/in/kimleclerc">LinkedIn</a>
+  </div>
+  <div style="margin-top:6px;opacity:0.5" id="footerNote">Independent analysis · Not affiliated with the Government of Ontario</div>
+</footer>
+
+<!-- DATA -->
+<script src="on-en.js"></script>
+<script src="on-fr.js"></script>
+
+<script>
+// ── STATE ──
+let LANG = 'en';
+let D = null;
+
+const LABELS = {
+  en: {
+    tagline:'Independent Analysis', eyebrow:'Ontario · March 25, 2026',
+    sub:'By <strong>Peter Bethlenfalvy</strong> · Independent analysis by Kim Leclerc',
+    search:'Search sectors, measures, terms…',
+    secChiffres:'Numbers', secSecteurs:'Sectors', secAudiences:'For You',
+    secPP:'Stakeholders', secComp:'Year-over-Year', secGlossaire:'Glossary',
+    secNotebook:'Notebook', secApropos:'About',
+    clickCard:'Click a card for the full analysis',
+    prevYear:'Previous year', currYear:'Current budget',
+    nbEyebrow:'Interactive Research Space',
+    nbTitle:'Ask the <em>budget</em> anything',
+    nbSub:"I've curated Ontario's official budget documents, my analysis and supplementary context into a single NotebookLM. Every answer cites the exact source page.",
+    nbDiff:"vs. ChatGPT / Gemini",
+    nb1Title:'Exact source citations',nb1Text:"Unlike ChatGPT or Gemini which answer from general memory, every response cites the exact page. No hallucinations about budget details.",
+    nb2Title:'Expert curation',nb2Text:"Official budget documents plus independent sector analysis — a curated set I selected and contextualized, not raw PDFs.",
+    nb3Title:'Your research space',nb3Text:"Ask in French or English, create your own documents, highlight sections. Your session, your questions.",
+    nbHowLabel:'How to use the notebook',
+    nbStep1:'Click the button below — a Google account is all you need',
+    nbStep2:'Ask your question in French or English',
+    nbStep3:'Every answer cites the exact document and page',
+    nbBtn:'Open the Ontario Budget Notebook',
+    nbNote:'NotebookLM by Google · Free · Google account required',
+    subTitle:'Subscribe for future analyses',
+    subNote:'Independent analysis of Canadian budgets — no ads, no affiliation.',
+    subBtn:'Subscribe on Substack →',
+    aboutKim:'Senior Advisor, AUCOIN Strategy & Communication. Public affairs, government relations and strategic communications.',
+    aboutSources:'Official sources',
+    aboutSourceNote:'Analysis based on official Government of Ontario documents. Independent site — no government affiliation.',
+    footer:'Independent analysis · Not affiliated with the Government of Ontario',
+    upcoming:'Analysis coming', liveLabel:'Analysis live',
+    phTitle:'Analysis Coming Soon', phNote:'Return on budget day for the full independent analysis.',
+    priorityHigh:'High', priorityMedium:'Medium', priorityHaute:'High', priorityMoyenne:'Medium',
+  },
+  fr: {
+    tagline:'Analyse indépendante', eyebrow:'Ontario · 25 mars 2026',
+    sub:'Par <strong>Peter Bethlenfalvy</strong> · Analyse indépendante par Kim Leclerc',
+    search:'Chercher un secteur, une mesure, un terme…',
+    secChiffres:'En chiffres', secSecteurs:'Par secteur', secAudiences:'Pour vous',
+    secPP:'Parties prenantes', secComp:'Comparaison', secGlossaire:'Glossaire',
+    secNotebook:'Notebook', secApropos:'À propos',
+    clickCard:'Cliquez sur une fiche pour l\'analyse complète',
+    prevYear:'Année précédente', currYear:'Budget actuel',
+    nbEyebrow:'Espace de recherche interactif',
+    nbTitle:'Interrogez le budget <em>Ontario</em>',
+    nbSub:"J'ai regroupé les documents officiels du budget de l'Ontario, mes analyses et des éléments de contexte dans un NotebookLM. Chaque réponse cite la page exacte.",
+    nbDiff:"vs. ChatGPT / Gemini",
+    nb1Title:'Sources précises',nb1Text:"Contrairement à ChatGPT ou Gemini qui répondent de leur mémoire générale, chaque réponse cite la page exacte du document source. Zéro invention.",
+    nb2Title:'Curation experte',nb2Text:"Documents officiels du budget plus analyse sectorielle indépendante — une sélection que j'ai choisie et contextualisée.",
+    nb3Title:'Votre espace de recherche',nb3Text:"Posez vos questions en français ou en anglais, créez vos propres documents, surlignez des sections. Votre session, vos questions.",
+    nbHowLabel:'Comment utiliser le notebook',
+    nbStep1:'Cliquez le bouton ci-dessous — un compte Google suffit',
+    nbStep2:'Posez votre question en français ou en anglais',
+    nbStep3:'Chaque réponse cite le document et la page exacte',
+    nbBtn:'Ouvrir le notebook du budget Ontario',
+    nbNote:'NotebookLM par Google · Gratuit · Compte Google requis',
+    subTitle:'Abonnez-vous pour les prochaines analyses',
+    subNote:'Analyse indépendante des budgets canadiens — aucune publicité, aucune affiliation.',
+    subBtn:'S\'abonner sur Substack →',
+    aboutKim:'Conseiller principal, AUCOIN Stratégie & Communication. Affaires publiques, relations gouvernementales et communications stratégiques.',
+    aboutSources:'Sources officielles',
+    aboutSourceNote:'Analyse basée sur les documents officiels du gouvernement de l\'Ontario. Site indépendant — aucune affiliation gouvernementale.',
+    footer:'Analyse indépendante · Non affilié au gouvernement de l\'Ontario',
+    upcoming:'Analyse à venir', liveLabel:'Analyse en ligne',
+    phTitle:'Analyse à venir', phNote:'Revenez le jour du dépôt pour l\'analyse complète.',
+    priorityHigh:'Haute', priorityMedium:'Moyenne', priorityHaute:'Haute', priorityMoyenne:'Moyenne',
+  }
+};
+
+const SECTIONS = ['chiffres','secteurs','audiences','pp','comp','glossaire','notebook','apropos'];
+
+function setLang(l) {
+  LANG = l;
+  D = l === 'en' ? BUDGET_EN : BUDGET_FR;
+  document.documentElement.lang = l;
+  document.getElementById('btnEN').classList.toggle('active', l==='en');
+  document.getElementById('btnFR').classList.toggle('active', l==='fr');
+  renderAll();
+}
+
+function renderAll() {
+  const L = LABELS[LANG];
+  document.title = `Ontario Budget 2026 — ${L.tagline} · Kim Leclerc`;
+  document.getElementById('navTitle').textContent = D.titre;
+  document.getElementById('navTagline').textContent = L.tagline;
+  document.getElementById('heroEyebrow').textContent = L.eyebrow;
+  document.getElementById('heroTitle').innerHTML = `Ontario Budget<br><em>2026</em>`;
+  document.getElementById('heroSub').innerHTML = L.sub;
+  document.getElementById('searchInput').placeholder = L.search;
+  document.getElementById('quoteText').textContent = D.quote.texte;
+  document.getElementById('quoteCite').textContent = `— ${D.quote.auteur}, ${D.quote.titre}`;
+  document.getElementById('footerNote').textContent = L.footer;
+
+  // Nav links
+  document.getElementById('nl-chiffres').textContent = L.secChiffres;
+  document.getElementById('nl-secteurs').textContent = L.secSecteurs;
+  document.getElementById('nl-audiences').textContent = L.secAudiences;
+  document.getElementById('nl-pp').textContent = L.secPP;
+  document.getElementById('nl-notebook').textContent = L.secNotebook;
+
+  renderSecNav();
+  renderMain();
+}
+
+function renderSecNav() {
+  const L = LABELS[LANG];
+  const keys = ['chiffres','secteurs','audiences','pp','comp','glossaire','notebook','apropos'];
+  const labels = [L.secChiffres,L.secSecteurs,L.secAudiences,L.secPP,L.secComp,L.secGlossaire,L.secNotebook,L.secApropos];
+  document.getElementById('secNavInner').innerHTML = keys.map((k,i)=>
+    `<button class="snbtn" id="snb-${k}" onclick="scrollSec('${k}')">${labels[i]}</button>`
+  ).join('');
+}
+
+function scrollSec(id) {
+  document.getElementById('sec-'+id)?.scrollIntoView({behavior:'smooth'});
+}
+
+function renderMain() {
+  const L = LABELS[LANG];
+  const isUpcoming = D.status === 'upcoming';
+  const mc = document.getElementById('mainContent');
+
+  if (isUpcoming) {
+    mc.innerHTML = `
+      <section id="sec-chiffres" style="margin-bottom:60px">
+        <div class="placeholder">
+          <div class="ph-icon">📋</div>
+          <p class="ph-title">${L.phTitle}</p>
+          <p class="ph-note" style="margin-bottom:14px">${L.phNote}</p>
+          <span class="ph-date">${D.date_depot}</span>
+        </div>
+      </section>
+      <section id="sec-secteurs"></section>
+      <section id="sec-audiences"></section>
+      <section id="sec-pp"></section>
+      <section id="sec-comp"></section>
+      <section id="sec-glossaire"></section>
+      ${renderNotebook()}
+      ${renderSubstack()}
+      ${renderApropos()}
+    `;
+  } else {
+    mc.innerHTML = `
+      ${renderChiffres()}
+      ${renderSecteurs()}
+      ${renderAudiences()}
+      ${renderPP()}
+      ${renderComp()}
+      ${renderGlossaire()}
+      ${renderNotebook()}
+      ${renderSubstack()}
+      ${renderApropos()}
+    `;
+  }
+  setupScrollSpy();
+}
+
+function renderChiffres() {
+  const L = LABELS[LANG];
+  const cards = D.chiffres.map(c=>`
+    <div class="chiffre ${c.direction||'neutral'}">
+      <div class="c-label">${c.label}</div>
+      <div class="c-val">${c.valeur}</div>
+      <div class="c-note">${c.note}</div>
+      <span class="c-var">${c.variation}</span>
+    </div>`).join('');
+  return `<section id="sec-chiffres">
+    <div class="sec-head"><h2 class="sec-title">${L.secChiffres}</h2></div>
+    <div class="chiffres-grid">${cards}</div>
+  </section>`;
+}
+
+function renderSecteurs() {
+  const L = LABELS[LANG];
+  const cards = D.secteurs.map(s=>`
+    <div class="secteur" onclick="openModal('${s.id}')">
+      <div class="secteur-top">
+        <div class="secteur-titre">${s.titre}</div>
+        <span class="pbadge ${s.priorite}">${L['priority'+s.priorite.charAt(0).toUpperCase()+s.priorite.slice(1)]||s.priorite}</span>
+      </div>
+      <div class="secteur-spend">${s.depenses}</div>
+      <div class="secteur-resume">${s.resume}</div>
+      <div class="tags">${(s.tags||[]).slice(0,4).map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+    </div>`).join('');
+  return `<section id="sec-secteurs">
+    <div class="sec-head">
+      <h2 class="sec-title">${L.secSecteurs}</h2>
+      <p class="sec-sub">${L.clickCard}</p>
+    </div>
+    <div class="secteurs-grid">${cards}</div>
+  </section>`;
+}
+
+function renderAudiences() {
+  const L = LABELS[LANG];
+  const cards = (D.audiences||[]).map(a=>`
+    <div class="audience">
+      <div class="aud-titre">${a.titre}</div>
+      <div class="aud-resume">${a.resume}</div>
+      ${(a.mesures||[]).map(m=>`
+        <div class="mesure">
+          <span class="mesure-label">${m.label}</span>
+          <span class="mesure-val">${m.valeur}</span>
+        </div>`).join('')}
+    </div>`).join('');
+  return `<section id="sec-audiences">
+    <div class="sec-head"><h2 class="sec-title">${L.secAudiences}</h2></div>
+    <div class="audiences-grid">${cards}</div>
+  </section>`;
+}
+
+function renderPP() {
+  const L = LABELS[LANG];
+  const cards = (D.parties_prenantes||[]).map(p=>`
+    <div class="pp">
+      <div class="pp-top">
+        <div class="pp-titre">${p.titre}</div>
+        <span class="pbadge ${p.priorite}">${L['priority'+p.priorite.charAt(0).toUpperCase()+p.priorite.slice(1)]||p.priorite}</span>
+      </div>
+      <div class="pp-resume">${p.resume}</div>
+      <ul class="pp-enjeux">${(p.enjeux||[]).map(e=>`<li>${e}</li>`).join('')}</ul>
+    </div>`).join('');
+  return `<section id="sec-pp">
+    <div class="sec-head"><h2 class="sec-title">${L.secPP}</h2></div>
+    <div class="pp-list">${cards}</div>
+  </section>`;
+}
+
+function renderComp() {
+  const L = LABELS[LANG];
+  if (!D.comparaison) return `<section id="sec-comp"></section>`;
+  const icons = {up:'↑',down:'↓',neutral:'→'};
+  const rows = D.comparaison.elements.map(e=>`
+    <tr>
+      <td>${e.label}</td>
+      <td>${e.avant}</td>
+      <td><strong>${e.apres}</strong></td>
+      <td><span class="dir ${e.direction}">${icons[e.direction]||'→'}</span></td>
+    </tr>`).join('');
+  return `<section id="sec-comp">
+    <div class="sec-head"><h2 class="sec-title">${L.secComp}</h2></div>
+    <div class="comp-wrap">
+      <table class="comp-table">
+        <thead><tr><th></th><th>${D.comparaison.annee_precedente} (${L.prevYear})</th><th>${D.annee} (${L.currYear})</th><th></th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+  </section>`;
+}
+
+function renderGlossaire() {
+  const L = LABELS[LANG];
+  const items = (D.glossaire||[]).map(g=>`
+    <div class="glossaire-item">
+      <div class="g-terme">${g.terme}</div>
+      <div class="g-def">${g.def}</div>
+    </div>`).join('');
+  return `<section id="sec-glossaire">
+    <div class="sec-head"><h2 class="sec-title">${L.secGlossaire}</h2></div>
+    <div class="glossaire-grid">${items}</div>
+  </section>`;
+}
+
+function renderNotebook() {
+  const L = LABELS[LANG];
+  const nbUrl = D.notebook?.url || '#';
+  const hasUrl = nbUrl && nbUrl !== '#';
+  return `<section id="sec-notebook">
+    <div class="notebook-section">
+      <div class="notebook-intro">
+        <div class="nb-eyebrow">🔬 ${L.nbEyebrow}</div>
+        <h2 class="nb-title">${L.nbTitle}</h2>
+        <p class="nb-sub">${L.nbSub}</p>
+      </div>
+      <div class="nb-cards">
+        <div class="nb-card">
+          <div class="nb-card-icon">📄</div>
+          <div class="nb-card-title">${L.nb1Title}</div>
+          <div class="nb-card-text">${L.nb1Text}</div>
+        </div>
+        <div class="nb-card">
+          <div class="nb-card-icon">🎯</div>
+          <div class="nb-card-title">${L.nb2Title}</div>
+          <div class="nb-card-text">${L.nb2Text}</div>
+        </div>
+        <div class="nb-card">
+          <div class="nb-card-icon">💬</div>
+          <div class="nb-card-title">${L.nb3Title}</div>
+          <div class="nb-card-text">${L.nb3Text}</div>
+        </div>
+      </div>
+      <div class="nb-steps">
+        <div class="nb-steps-label">${L.nbHowLabel}</div>
+        <div class="nb-steps-grid">
+          <div class="nb-step"><span class="nb-step-num">1</span><span class="nb-step-text">${L.nbStep1}</span></div>
+          <div class="nb-step"><span class="nb-step-num">2</span><span class="nb-step-text">${L.nbStep2}</span></div>
+          <div class="nb-step"><span class="nb-step-num">3</span><span class="nb-step-text">${L.nbStep3}</span></div>
+        </div>
+      </div>
+      <div class="nb-cta">
+        ${hasUrl
+          ? `<a class="nb-btn" href="${nbUrl}" target="_blank">🔬 ${L.nbBtn}</a>`
+          : `<span class="nb-btn" style="opacity:0.5;cursor:default">🔬 ${L.nbBtn} — ${L.upcoming}</span>`
+        }
+        <p class="nb-note">${L.nbNote}</p>
+      </div>
+    </div>
+  </section>`;
+}
+
+function renderSubstack() {
+  const L = LABELS[LANG];
+  return `<section id="sec-substack">
+    <div class="substack-block">
+      <div class="sub-title">${L.subTitle}</div>
+      <p class="sub-note">${L.subNote}</p>
+      <a class="sub-btn" href="https://kimleclerc.substack.com/" target="_blank">${L.subBtn}</a>
+    </div>
+  </section>`;
+}
+
+function renderApropos() {
+  const L = LABELS[LANG];
+  const src = D.sources;
+  return `<section id="sec-apropos">
+    <div class="sec-head"><h2 class="sec-title">${L.secApropos}</h2></div>
+    <div class="about-grid">
+      <div class="about-card">
+        <h4>Kim Leclerc</h4>
+        <p>${L.aboutKim}</p>
+        <div class="social-row">
+          <a class="soc-link" href="https://kimleclerc.ca">kimleclerc.ca</a>
+          <a class="soc-link" href="https://kimleclerc.substack.com">Substack</a>
+          <a class="soc-link" href="https://x.com/kimleclerc">X</a>
+          <a class="soc-link" href="https://linkedin.com/in/kimleclerc">LinkedIn</a>
+          <a class="soc-link" href="https://www.aucoinstrategie.com">AUCOIN</a>
+        </div>
+      </div>
+      <div class="about-card">
+        <h4>${L.aboutSources}</h4>
+        <p>${L.aboutSourceNote}</p>
+        <div class="social-row" style="margin-top:10px">
+          <a class="soc-link" href="${src.plan}" target="_blank">${LANG==='fr'?'Budget Ontario':'Ontario Budget'}</a>
+          <a class="soc-link" href="${src.bref}" target="_blank">${LANG==='fr'?'Plan budgétaire':'Budget plan'}</a>
+        </div>
+      </div>
+    </div>
+  </section>`;
+}
+
+// MODAL
+function openModal(id) {
+  const s = D.secteurs.find(x=>x.id===id);
+  if (!s) return;
+  document.getElementById('modalContent').innerHTML = `
+    <div class="m-titre">${s.titre}</div>
+    <div class="m-meta"><span>${s.depenses}</span><span>${s.variation}</span></div>
+    <p class="m-resume">${s.resume}</p>
+    <ul class="m-points">${(s.points||[]).map(p=>`<li>${p}</li>`).join('')}</ul>
+    <div class="tags">${(s.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+  `;
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeModal(){
+  document.getElementById('modal').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+
+// SEARCH
+function doSearch(q) {
+  const el = document.getElementById('searchInfo');
+  if (!q||q.length<2){el.textContent='';return}
+  const ql=q.toLowerCase();
+  const hits=[];
+  (D.secteurs||[]).forEach(s=>{
+    if(`${s.titre} ${s.resume} ${(s.tags||[]).join(' ')}`.toLowerCase().includes(ql))
+      hits.push(s.titre);
+  });
+  (D.glossaire||[]).forEach(g=>{
+    if(`${g.terme} ${g.def}`.toLowerCase().includes(ql))
+      hits.push(g.terme);
+  });
+  const word = LANG==='fr'?(hits.length<=1?'résultat':'résultats'):(hits.length<=1?'result':'results');
+  el.textContent = hits.length
+    ? `${hits.length} ${word} — ${hits.slice(0,3).join(', ')}${hits.length>3?'…':''}`
+    : (LANG==='fr'?`Aucun résultat pour "${q}"`:`No results for "${q}"`);
+}
+
+// SCROLL SPY
+function setupScrollSpy() {
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        const id=e.target.id.replace('sec-','');
+        document.querySelectorAll('.snbtn').forEach(b=>b.classList.remove('active'));
+        document.getElementById('snb-'+id)?.classList.add('active');
+      }
+    });
+  },{threshold:0.15,rootMargin:'-100px 0px -55% 0px'});
+  ['chiffres','secteurs','audiences','pp','comp','glossaire','notebook','apropos'].forEach(id=>{
+    const el=document.getElementById('sec-'+id);
+    if(el)obs.observe(el);
+  });
+}
+
+// INIT
+setLang('en');
+</script>
+</body>
+</html>
