@@ -1,406 +1,455 @@
 // =========================================================
-// BUDGET ONTARIO 2026 — DONNÉES FRANÇAISES
-// « Un plan pour protéger l’Ontario »
+// BUDGET ONTARIO 2026-2027 — DONNEES FRANCAISES
+// "Un plan pour proteger l'Ontario"
 // Ministre des Finances : Peter Bethlenfalvy
-// Déposé : 25 mars 2026
+// Depose : 25 mars 2026
 // =========================================================
 
 const BUDGET_FR = {
-lang: “fr”,
-annee: “2026-2027”,
-titre: “Budget Ontario 2026”,
-titre_complet: “Un plan pour protéger l’Ontario”,
-date_depot: “25 mars 2026”,
-ministre: “Peter Bethlenfalvy”,
-status: “live”,
+  lang: "fr",
+  annee: "2026-2027",
+  titre: "Budget Ontario 2026",
+  titre_complet: "Un plan pour proteger l'Ontario",
+  date_depot: "25 mars 2026",
+  ministre: "Peter Bethlenfalvy",
+  status: "live",
 
-quote: {
-texte: “Naviguer à travers ces défis exige une approche pragmatique — notre plan financier prudent est plus important que jamais. Nous mettons en oeuvre notre plan pour bâtir l’économie la plus concurrentielle, la plus résiliente et la plus autosuffisante du G7.”,
-auteur: “Peter Bethlenfalvy”,
-titre: “Ministre des Finances de l’Ontario — Budget 2026”,
-},
+  quote: {
+    texte: "Nous n'allons pas seulement nous adapter aux changements, nous allons les diriger. Nous batissons pour faire de l'Ontario l'economie la plus concurrentielle du G7. Ensemble, nous allons proteger l'Ontario.",
+    auteur: "Peter Bethlenfalvy",
+    titre: "Ministre des Finances de l'Ontario -- Budget 2026",
+  },
 
-chiffres: [
-{ label: “Déficit 2026-2027”, valeur: “-13,8 G$”, note: “Infrastructure, réponse tarifaire et services publics”, variation: “S’améliore vs -12,3 G$ en 2025-2026”, direction: “down” },
-{ label: “Retour à l’équilibre”, valeur: “2028-2029”, note: “Excédent prévu de 0,6 G$ incluant la réserve”, variation: “Déficit de -6,1 G$ en 2027-2028”, direction: “up” },
-{ label: “Plan capital (10 ans)”, valeur: “210 G$+”, note: “Le plan de construction provincial le plus ambitieux de l’histoire du Canada”, variation: “37 G$ en 2026-2027 seulement”, direction: “up” },
-{ label: “Dette nette/PIB”, valeur: “~40 %”, note: “Prévision 2026-2027 — au plafond cible du gouvernement”, variation: “Discipline fiscale maintenue”, direction: “neutral” },
-{ label: “Réponse tarifaire (cumul)”, valeur: “~30 G$”, note: “Aide et soutien depuis avril 2025”, variation: “Inclut 9 G$ en reports d’impôt + nouvelles mesures”, direction: “neutral” },
-{ label: “Croissance du PIB (2025 réel)”, valeur: “1,2 %”, note: “Meilleur que la prévision de 0,8 % du budget 2025”, variation: “1,0 % prévu pour 2026”, direction: “up” },
-],
+  chiffres: [
+    { label: "Deficit 2026-2027", valeur: "-13,8 G$", note: "En hausse vs -12,3 G$ en 2025-2026 -- investissements en infrastructure", variation: "Retour a l'excedent 0,6 G$ en 2028-2029", direction: "down" },
+    { label: "Retour a l'equilibre", valeur: "2028-2029", note: "Excedent de 0,6 G$ -- un an plus tard que prevu au budget 2025", variation: "Deficit 6,1 G$ en 2027-2028", direction: "up" },
+    { label: "Plan capital (10 ans)", valeur: "210 G$+", note: "Le plus ambitieux plan capital provincial de l'histoire canadienne", variation: "37 G$ en 2026-2027 seulement", direction: "up" },
+    { label: "Croissance du PIB reel (2025)", valeur: "1,2 %", note: "Mieux que prevu -- budget 2025 projetait 0,8 %", variation: "1,0 % projete pour 2026", direction: "up" },
+    { label: "Dette nette/PIB", valeur: "~39 %", note: "Demeure sous la cible de 40 % -- bonne position fiscale", variation: "Stable a moyen terme", direction: "neutral" },
+    { label: "Aide tarifaire (depuis avr. 2025)", valeur: "~30 G$", note: "Soutien total pour travailleurs et entreprises", variation: "Programme financement Proteger l'Ontario + reports", direction: "neutral" },
+  ],
 
-secteurs: [
-{
-id: “tarifs-economie”,
-titre: “Réponse aux tarifs et compétitivité économique”,
-depenses: “~30 G$ cumulatif depuis avril 2025 · 4 G$ Fonds d’investissement Compte pour protéger l’Ontario”,
-variation: “Continuité depuis 2025 — nouveau Fonds d’investissement ajouté”,
-priorite: “haute”,
-resume: “Le budget 2026 renforce la stratégie de réponse aux tarifs établie l’an dernier. Le nouveau Fonds d’investissement Compte pour protéger l’Ontario (4 G$) fait passer la stratégie de la défensive à l’offensive — IA, défense, fabrication avancée, sciences de la vie et minéraux critiques. C’est le budget qui signale que l’Ontario a fini de jouer en défense et qu’il bâtit maintenant pour la prochaine économie.”,
-points: [
-“4 G$ Fonds d’investissement Compte pour protéger l’Ontario — IA, défense, fabrication avancée, sciences de la vie, R-D en minéraux critiques”,
-“Fonds conçu pour attirer des capitaux de fonds de pension et du secteur privé”,
-“Programme de financement Protéger l’Ontario poursuivi — fonds de roulement pour les PME touchées par les tarifs”,
-“Centres POUVOIR — ont aidé près de 15 000 travailleurs en 2025”,
-“100 M$ additionnels au Fonds Ontario ensemble commercial (FOEC) — nouveaux marchés interprovinciaaux et d’exportation”,
-“Taux d’imposition des petites entreprises réduit de plus de 30 % — jusqu’à 5 000 $ par an”,
-“Amortissement accéléré des immobilisations — 3,5 G$ en allègements fiscaux provinciaux sur 4 ans”,
-“Cadre Un projet, un processus : Frontier Lithium, Canada Nickel Crawford, Kinross Great Bear en voie rapide”,
-“Routes tout-temps vers la Ceinture de feu accélérées — construction juin 2026, ouverture novembre 2030 (5 ans en avance)”,
-],
-tags: [“tarifs”, “économie”, “investissement”, “IA”, “défense”, “minéraux-critiques”, “ceinture-de-feu”]
-},
-{
-id: “plan-action-fiscal”,
-titre: “Plan d’action fiscal et compétitivité”,
-depenses: “3,5 G$ allègement amortissement (4 ans) · Réduction >30 % taux petites entreprises”,
-variation: “Nouveau plan d’action fiscal pluriannuel introduit”,
-priorite: “haute”,
-resume: “Le plan d’action fiscal pluriannuel est la politique économique phare du budget 2026. La réduction du taux d’imposition des petites entreprises de plus de 30 % est un vrai signal — pas un crédit ponctuel, mais un changement de taux structurel. L’amortissement accéléré aligne l’Ontario avec les mesures fédérales. L’objectif : la compétitivité la plus élevée du G7.”,
-points: [
-“Taux d’imposition des petites entreprises réduit de plus de 30 % — jusqu’à 5 000 $ d’allègement annuel”,
-“Déduction pour amortissement accélérée des équipements — 3,5 G$ sur 4 ans”,
-“S’appuie sur ~10 G$ d’économies cumulatives pour les entreprises depuis 2018”,
-“Règles de mobilité de la main-d’oeuvre ‘De plein droit’ — premières au Canada”,
-“Ontario : première province à supprimer toutes ses exemptions spécifiques dans l’Accord de libre-échange canadien”,
-“Réduction du fardeau réglementaire et accélération des processus d’autorisation”,
-“Règlement historique sur la mobilité de la main-d’oeuvre en vigueur depuis janvier 2026”,
-],
-tags: [“fiscal”, “compétitivité”, “petites-entreprises”, “amortissement”, “commerce”, “mobilité-main-oeuvre”]
-},
-{
-id: “infrastructure-transport”,
-titre: “Infrastructures et transport en commun”,
-depenses: “210 G$+ sur 10 ans · Routes 31 G$ · 37 G$ en 2026-2027”,
-variation: “Plan capital à 210 G$ — vraie construction sur les grands projets”,
-priorite: “haute”,
-resume: “La construction a commencé sur l’autoroute 413 et le contournement de Bradford. Deux nouvelles lignes de transport en commun ont ouvert à Toronto. Les travaux d’excavation de la ligne Ontario à la station Queen sont en cours. Les routes vers la Ceinture de feu ont été accélérées de 5 ans. C’est un budget qui peut montrer une vraie construction, pas seulement des annonces.”,
-points: [
-“Autoroute 413 : construction commencée — économise jusqu’à 30 min par trajet”,
-“Contournement de Bradford : construction commencée — économise 35 min, relie les autoroutes 400 et 404”,
-“Faisabilité tunnel autoroute 401 — travaux de terrain au printemps 2026”,
-“Routes tout-temps Ceinture de feu : construction juin 2026, ouverture novembre 2030 (5 ans en avance)”,
-“Ligne Ontario : excavation en cours à la station Queen”,
-“Prolongement du métro de Scarborough : mise en chantier de la première des trois stations”,
-“Prolongement Yonge Nord : démarches pour les premières pelletées de terre”,
-“GO Transit : premier service de fin de semaine vers Kitchener, service plus fréquent vers Niagara, construction station Woodbine”,
-“Deux nouvelles lignes de transport en commun déjà ouvertes à Toronto”,
-],
-tags: [“transport-en-commun”, “autoroutes”, “autoroute-413”, “contournement-Bradford”, “ligne-Ontario”, “Scarborough”, “GO”]
-},
-{
-id: “sante”,
-titre: “Soins de santé”,
-depenses: “Plan de 64 G$ · 50 G$ capital hospitalier · 3,4 G$ Plan d’action soins primaires (4 ans)”,
-variation: “4e année consécutive d’investissement hospitalier record”,
-priorite: “haute”,
-resume: “Pour la quatrième année consécutive, l’Ontario réalise un investissement historique dans les hôpitaux — plus de 1,1 G$ en financement additionnel. Le Plan d’action pour les soins primaires de 3,4 G$ se poursuit. De nouvelles facultés de médecine sont construites et agrandies. Les SLD reçoivent 139,4 M$ additionnels.”,
-points: [
-“Plus de 1,1 G$ de financement hospitalier additionnel en 2026-2027 — 4e année consécutive record”,
-“50 G$ en subventions capital pour hôpitaux et infrastructure de santé (dans le plan de 64 G$)”,
-“Plan d’action pour les soins primaires de 3,4 G$ sur 4 ans — nouveaux médecins et fournisseurs de soins”,
-“Construction et agrandissement des facultés de médecine pour former plus de médecins”,
-“139,4 M$ additionnels pour les foyers de soins de longue durée en 2026-2027”,
-“965 M$ dont 186 M$ de nouveaux fonds pour le Programme ontarien des services en matière d’autisme”,
-“Remise en état de l’unité 4 de Darlington complétée — en avance sur l’horaire, 150 M$ sous le budget”,
-],
-tags: [“santé”, “hôpitaux”, “soins-primaires”, “SLD”, “autisme”, “facultés-médecine”]
-},
-{
-id: “education”,
-titre: “Éducation et enseignement supérieur”,
-depenses: “6,4 G$ nouveaux fonds postsecondaires · 66 M$ Fonds fournitures scolaires”,
-variation: “Annonce transformatrice pour l’enseignement supérieur — 6,4 G$ en nouveaux fonds”,
-priorite: “haute”,
-resume: “Les 6,4 G$ en nouveaux fonds pour l’enseignement supérieur constituent l’annonce phare en éducation — une réponse directe à la crise financière des collèges et universités de l’Ontario. Le Fonds de fournitures scolaires (750 $ par enseignant de classe à l’élémentaire) est modeste mais concret. L’accent est mis sur la formation de diplômés compétitifs pour l’économie du G7.”,
-points: [
-“6,4 G$ en nouveaux fonds pour le secteur postsecondaire — collèges, universités et Instituts autochtones”,
-“Assure la durabilité des établissements et prépare les diplômés à des carrières compétitives”,
-“66 M$ Fonds de fournitures scolaires — 750 $ par titulaire de classe à l’élémentaire par année scolaire”,
-“20 M$ Fonds commémoratif Liam Riazati — barrières de béton préventives pour les centres de garde”,
-“Poursuite des investissements dans la construction d’écoles et de places de garde (dans le plan de 210 G$)”,
-],
-tags: [“éducation”, “postsecondaire”, “collèges”, “universités”, “garde-enfants”, “salle-de-classe”]
-},
-{
-id: “logement-abordabilite”,
-titre: “Logement et abordabilité”,
-depenses: “Remboursement TVH sur les nouvelles maisons jusqu’à 1 M$ (8 % provincial entier supprimé)”,
-variation: “Nouveau remboursement TVH majeur — suppression de la totalité de la portion provinciale”,
-priorite: “haute”,
-resume: “La suppression de la totalité des 8 % de TVH provinciale sur les nouvelles maisons jusqu’à 1 M$ est la mesure d’abordabilité du logement la plus significative de ce budget. Le gouvernement prévoit que cela pourrait stimuler des milliers de mises en chantier, soutenir 14 000 emplois en construction et ajouter 0,2 point de pourcentage à la croissance du PIB. La question reste l’arrimage fédéral.”,
-points: [
-“Suppression de la totalité des 8 % de TVH provinciale sur les nouvelles maisons jusqu’à 1 M$ — jusqu’à 80 000 $ d’allègement”,
-“Allègement maintenu pour les maisons jusqu’à 1,5 M$”,
-“Pourrait stimuler des milliers de mises en chantier et soutenir 14 000 emplois en construction”,
-“Admissible pour les acheteurs ayant acheté à compter du 20 mars 2025 — rétroactif”,
-“Ontario presse le gouvernement fédéral de s’aligner sur la mesure”,
-“Réduction permanente de la taxe sur l’essence — 2,1 G$ économisés depuis juillet 2022”,
-“Péages sur la partie provinciale de l’autoroute 407 Est supprimés — économies estimées à 7 200 $ par an”,
-“Programme Une seule tarification prolongé de 2 ans — économies allant jusqu’à 1 600 $/an, 233 M$ économisés depuis 2024”,
-“Remise sur l’électricité (REO) — réduit la facture résidentielle type d’environ 36 $/mois”,
-],
-tags: [“logement”, “TVH”, “nouvelles-maisons”, “abordabilité”, “taxe-essence”, “péages”, “une-seule-tarification”]
-},
-{
-id: “energie-nucleaire”,
-titre: “Énergie et nucléaire”,
-depenses: “800 G$+ de contribution à l’économie canadienne (durée de vie du plan nucléaire)”,
-variation: “Expansion nucléaire accélérée — entente de Wesleyville signée”,
-priorite: “haute”,
-resume: “Le pari nucléaire de l’Ontario s’amplifie. La remise en état de l’unité 4 de Darlington est terminée, en avance sur l’horaire et 150 M$ sous le budget. Ontario Power Generation a signé l’entente pour le projet nucléaire de Wesleyville — 10 500 emplois, 235 G$ d’impact sur le PIB de l’Ontario. Quatre RPM à Darlington sont en construction (les premiers du G7).”,
-points: [
-“Remise en état unité 4 de Darlington complétée — en avance, 150 M$ sous le budget”,
-“Ontario Power Generation signe l’entente du projet nucléaire de Wesleyville — 10 500 emplois, 235 G$ de PIB”,
-“Quatre RPM à Darlington — premiers du G7, assez d’électricité pour 1,2 M de foyers”,
-“Plan d’expansion nucléaire : 150 000 occasions d’emplois attendues”,
-“Contribution de plus de 800 G$ à l’économie canadienne sur la durée de vie du plan nucléaire”,
-“Positionnement de l’avantage nucléaire de l’Ontario pour l’exportation mondiale”,
-],
-tags: [“nucléaire”, “énergie”, “RPM”, “Darlington”, “Wesleyville”, “emplois”, “énergie-propre”]
-},
-{
-id: “justice-securite”,
-titre: “Sécurité publique et justice”,
-depenses: “32,5 M$ Opération Dissuasion 2.0 (2026-2027)”,
-variation: “Opération Dissuasion 2.0 — renforcement de la sécurité aux frontières”,
-priorite: “moyenne”,
-resume: “L’Opération Dissuasion lancée en janvier 2025 a livré des résultats concrets : plus de 550 armes à feu illégales retracées, 4 152 kg de cocaïne saisis, 192 kg de fentanyl, 641 accusations portées. L’Opération Dissuasion 2.0 élargit cette capacité avec 32,5 M$ en deux nouveaux programmes de subventions pour la sécurité aux frontières.”,
-points: [
-“Résultats Opération Dissuasion : 550+ armes illégales, 4 152 kg cocaïne, 192 kg fentanyl, 641 accusations”,
-“32,5 M$ en 2026-2027 pour deux nouveaux programmes de subventions pour la sécurité aux frontières”,
-“Nouvelles lois pour renforcer le système de mise en liberté sous caution pour les récidivistes violents”,
-“Élargissement des équipes spécialisées de poursuites en matière de cautionnement”,
-“Exploration de rendre une partie du registre des délinquants sexuels accessible au public”,
-“Investissements historiques en capacité carcérale pour les détenus à risque élevé”,
-],
-tags: [“sécurité”, “frontières”, “cautionnement”, “armes-à-feu”, “corrections”, “Opération-Dissuasion”]
-},
-],
+  secteurs: [
+    {
+      id: "tarifs-economie",
+      titre: "Reponse aux tarifs et competitivite economique",
+      depenses: "~30 G$ depuis avril 2025 · 4 G$ Fonds d'investissement Compte Proteger l'Ontario",
+      variation: "Continu depuis 2025 -- approfondi et elargi",
+      priorite: "haute",
+      resume: "L'Ontario a engage pres de 30 milliards de dollars de mesures de soutien depuis avril 2025. Le nouveau Fonds d'investissement Compte Proteger l'Ontario (4 G$ avec co-investissement prive) est la mesure phare -- ciblant l'IA, la defense, la fabrication avancee, les sciences de la vie et les mineraux critiques. La Loi d'achat ontario rend l'approvisionnement national obligatoire. L'ouverture de l'usine de batteries NextStar le 5 mars 2026 est la grande victoire du VE.",
+      points: [
+        "Fonds d'investissement Compte Proteger l'Ontario : jusqu'a 4 G$, gere avec un gestionnaire prive -- IA, defense, fabrication avancee, sciences de la vie, mineraux critiques",
+        "Grande ouverture de l'usine de batteries NextStar le 5 mars 2026 -- 1 300 travailleurs, 1 200 de plus a pleine capacite, investissement de 5 G$",
+        "Usine PowerCo a St. Thomas en bonne voie -- le plus grand projet de PowerCo a l'echelle mondiale",
+        "Vianode investit 3,2 G$ pour une usine de graphite synthetique a St. Thomas -- premiere installation nord-americaine a grande echelle",
+        "Asahi Kasei investit 1,6 G$ pour une usine de separateurs de batteries a Port Colborne -- production en 2027",
+        "Loi d'achat Ontario -- approvisionnement national obligatoire pour les projets finances par la province",
+        "85 M$ pour le Programme de modernisation du secteur automobile (O-AMP) et l'OVIN",
+        "Fonds Ontario ensemble commercial : 100 M$ supplementaires en novembre 2025",
+        "Reports d'impots : 9 G$ de liquidites d'avril a octobre 2025",
+        "Centres POWER : ont aide pres de 15 000 travailleurs licencies",
+        "500 M$ d'investissement conjoint federal-provincial pour Algoma Steel (100 M$ du pret provincial)",
+      ],
+      tags: ["tarifs", "automobile", "VE", "batteries", "fabrication", "competitivite", "achat-Ontario"]
+    },
+    {
+      id: "competitivite-fiscale",
+      titre: "Plan d'action fiscal et competitivite",
+      depenses: "Pluriannuel -- pres de 10 G$ en economies annuelles estimees pour les entreprises",
+      variation: "Nouveau plan d'action fiscal pluriannuel annonce",
+      priorite: "haute",
+      resume: "Le plan d'action fiscal pluriannuel est presente comme la reponse structurelle de l'Ontario a la competitivite face aux tarifs americains. L'Ontario est aussi la premiere province a supprimer toutes ses exemptions specifiques aux parties dans le cadre de l'Accord de libre-echange canadien, et les regles de mobilite de la main-d'oeuvre sont les premieres au Canada.",
+      points: [
+        "Plan d'action fiscal pluriannuel -- attirer les investissements, favoriser la croissance, appuyer la creation d'emplois",
+        "Pres de 10 G$ en economies et soutiens annuels estimes pour les entreprises",
+        "Ontario premiere province a supprimer toutes ses exemptions specifiques aux parties dans l'ALEC",
+        "Regles de mobilite de la main-d'oeuvre 'de plein droit' -- premieres au Canada",
+        "Cadre Un projet, Un processus -- accelere les approbations minieres (Frontier Lithium PAK, Canada Nickel Crawford, Kinross Gold Great Bear)",
+        "Remise de la TVH sur les nouvelles maisons : supprimer la portion provinciale de 8 % sur les maisons jusqu'a 1 M$ -- jusqu'a 80 000 $ de soulagement, maintenu jusqu'a 1,5 M$",
+        "Reductions de la taxe sur l'essence et les carburants rendues permanentes -- 2,1 G$ economises depuis juillet 2022",
+        "Peages de l'autoroute 407 Est definitif supprimes -- economies d'environ 7 200 $/an pour les navetteurs",
+        "Programme Une seule tarification prolonge de deux annees supplementaires",
+      ],
+      tags: ["impot", "competitivite", "G7", "commerce", "mobilite-main-oeuvre", "TVH", "logement"]
+    },
+    {
+      id: "infrastructure-transport",
+      titre: "Infrastructures et transport en commun",
+      depenses: "210 G$+ sur 10 ans · Transport en commun 63 G$ · Routes 31 G$ · 37 G$ en 2026-2027",
+      variation: "Elargi depuis 200 G$ -- construction activement en cours",
+      priorite: "haute",
+      resume: "La construction est maintenant activement en cours sur les grands projets annonces en 2025. L'autoroute 413 a commence sa construction. Le TLR Finch Ouest et le TLR Croix de Lumiere ont ouvert. La construction des routes de la Ceinture de feu commence en juin 2026 -- cinq ans avant le calendrier. Le Northlander revient en 2026.",
+      points: [
+        "Transport en commun : 63 G$ sur 10 ans -- Ontario Line (excavation a la station Queen), Scarborough (3 premieres stations), Eglinton Ouest, Yonge Nord",
+        "TLR Finch Ouest et TLR Croix de Lumiere maintenant ouverts",
+        "TLR Hamilton et Ligne Hazel McCallion en cours -- portion de Brampton a etre mise en tunnel",
+        "Autoroute 413 : construction commencee -- economie jusqu'a 30 min par trajet",
+        "Contournement de Bradford : construction commencee -- economie de 35 min",
+        "Routes de la Ceinture de feu : construction en juin 2026, routes ouvertes en novembre 2030 -- cinq ans avant le calendrier",
+        "Northlander retabli en 2026 -- service ferroviaire Nord de l'Ontario -- Toronto",
+        "Etude de faisabilite tunnel autoroute 401 -- travaux de terrain au printemps 2026",
+        "Elargissement autoroute 69 Parry Sound -- Sudbury ; autoroute 3 Essex -- Leamington",
+        "GO Transit : extensions vers Kitchener (premier service de fin de semaine), Niagara, Bowmanville",
+        "Pres de 1 G$ pour 55 nouvelles rames de metro de la ligne 2 de la TTC fabriquees a Thunder Bay",
+        "850 M$ pour la remise en etat des voitures de train GO",
+      ],
+      tags: ["transport-en-commun", "routes", "autoroute-413", "contournement-Bradford", "ceinture-de-feu", "Northlander", "TLR"]
+    },
+    {
+      id: "sante",
+      titre: "Soins de sante",
+      depenses: "64 G$ hopitaux (10 ans) · 3,4 G$ Plan d'action soins primaires (4 ans) · 6,4 G$ SLD",
+      variation: "Capital hospitalier elargi -- grands projets phares annonces",
+      priorite: "haute",
+      resume: "Le capital en sante est passe a 64 G$ sur 10 ans avec pres de 50 G$ en subventions capital. Projets phares : hopital Peter Gilgan Mississauga (plus grand hopital d'enseignement au Canada), Campus civique de l'Hopital d'Ottawa, hopital Fancsy Windsor. SLD : pres de 26 000 lits approuves ou en construction.",
+      points: [
+        "64 G$ d'infrastructure de sante sur 10 ans dont pres de 50 G$ en subventions capital",
+        "Hopital Peter Gilgan Mississauga -- plus grand hopital d'enseignement au Canada, triple la taille actuelle, dessert 2,2 M de personnes",
+        "Campus civique de l'Hopital d'Ottawa -- centre de soins actifs principal pour Ottawa et l'Est de l'Ontario",
+        "Hopital de la famille Fancsy Windsor -- consolide deux hopitaux, 594 lits dont 101 nets nouveaux",
+        "Nouvel hopital Niagara Sud -- ouverture ete 2028, 469 lits, services 24/7",
+        "SLD : pres de 26 000 lits (164 projets) ouverts, en construction ou approuves en fevrier 2026",
+        "Plan d'action soins primaires de 3,4 G$ sur 4 ans -- connecter chaque Ontarien a un medecin de famille",
+        "965 M$ pour le Programme ontarien des services en autisme en 2026-2027 dont 186 M$ de nouveaux fonds",
+        "20 M$ Fonds commemoratif Liam Riazati -- barrieres de beton protectrices pour les centres de garde",
+      ],
+      tags: ["sante", "hopitaux", "SLD", "soins-primaires", "autisme", "Mississauga", "Ottawa", "Windsor"]
+    },
+    {
+      id: "education-postsecondaire",
+      titre: "Education et enseignement postsecondaire",
+      depenses: "30 G$ ecoles (10 ans) · 6,4 G$ postsecondaire (nouveaux) · 66 M$ Fonds fournitures scolaires",
+      variation: "6,4 G$ de nouveaux fonds pour le postsecondaire -- investissement transformateur",
+      priorite: "haute",
+      resume: "La mesure phare en education : 6,4 G$ de nouveaux fonds pour les etablissements postsecondaires -- colleges, universites et instituts autochtones. Cela repond directement a la crise de viabilite du secteur. Le Fonds de fournitures pour la classe (750 $ par enseignant de classe homeroom au primaire) est un geste direct pour les enseignants.",
+      points: [
+        "6,4 G$ de nouveaux fonds pour le postsecondaire -- assure la viabilite des colleges, universites et instituts autochtones",
+        "5,5 G$ en capital postsecondaire sur 10 ans dont 2,2 G$ en subventions capital",
+        "30 G$ en capital scolaire et services de garde sur 10 ans dont 22 G$ en subventions capital",
+        "Nouvelles ecoles : Lac Savant, Orleans (catholique francais), Kitchener (catholique anglais), North York (public francais), Bradford West Gwillimbury",
+        "Fonds de fournitures pour la classe : 66 M$ -- 750 $ par enseignant de classe homeroom au primaire par annee scolaire",
+        "Remise pour l'electricite de l'Ontario (REO) : reduction des factures mensuelles residentielles d'environ 36 $",
+      ],
+      tags: ["education", "postsecondaire", "colleges", "universites", "ecoles", "services-de-garde", "enseignants"]
+    },
+    {
+      id: "mineraux-critiques-energie",
+      titre: "Mineraux critiques, energie et Ceinture de feu",
+      depenses: "Construction routes Ceinture de feu juin 2026 · Premier RPM du G7 complete",
+      variation: "Ceinture de feu cinq ans en avance -- RPM historique accompli",
+      priorite: "haute",
+      resume: "Deux jalons historiques : l'Ontario a complete le premier reacteur de petite taille modulaire (RPM) du G7, et la construction des routes de la Ceinture de feu est maintenant prevue pour juin 2026 -- cinq ans avant le calendrier. Trois grands projets miniers accelerent via le cadre Un projet, Un processus.",
+      points: [
+        "Premier RPM du G7 complete -- l'Ontario mene l'expansion nucleaire",
+        "Construction routes Ceinture de feu juin 2026, routes ouvertes novembre 2030 -- cinq ans avant le calendrier",
+        "Accords avec trois Premieres Nations + accord de cooperation federal pour eliminer la duplication des evaluations",
+        "Cadre Un projet, Un processus : Frontier Lithium PAK, Canada Nickel Crawford, Kinross Gold Great Bear en cours",
+        "Fonds d'investissement Compte Proteger l'Ontario (4 G$) -- mineraux critiques explicitement cibles",
+        "Remises a neuf nucleaires : Darlington, Bruce et Pickering en cours",
+        "REO maintient les factures d'electricite stables",
+        "Ontario demande au gouvernement federal d'egaler ou de depasser l'engagement de 1 G$ pour l'infrastructure de la Ceinture de feu",
+      ],
+      tags: ["ceinture-de-feu", "mineraux-critiques", "RPM", "nucleaire", "energie", "premieres-nations", "mines"]
+    },
+    {
+      id: "logement",
+      titre: "Abordabilite du logement",
+      depenses: "Remise TVH jusqu'a 80 000 $ · Objectif 1,5 M logements · Infrastructure municipale habilitante",
+      variation: "Remise TVH sur nouvelles maisons -- jusqu'a 80 000 $ de soulagement",
+      priorite: "haute",
+      resume: "La remise de TVH sur les nouvelles maisons est la mesure phare -- supprimer la totalite de la portion provinciale de 8 % pour les maisons jusqu'a 1 M$, maintenue jusqu'a 1,5 M$, jusqu'a 80 000 $ de soulagement. Pourrait stimuler des milliers de mises en chantier et 14 000 emplois en construction.",
+      points: [
+        "Remise TVH : supprimer la portion provinciale de 8 % pour les nouvelles maisons jusqu'a 1 M$ -- jusqu'a 80 000 $ de soulagement, maintenu jusqu'a 1,5 M$",
+        "Retroactive au 20 mars 2025 pour les acquereurs admissibles -- en collaboration avec le gouvernement federal",
+        "Pourrait stimuler des milliers de mises en chantier, soutenir 14 000 emplois en construction, ajouter 0,2 pp au PIB",
+        "Objectif de 1,5 million de logements d'ici 2031 maintenu",
+        "Mises en chantier 2025 reelles : 65 400 -- inferieures aux previsions du budget 2025 de 71 800",
+        "Programme d'infrastructure municipale de logement se poursuit",
+        "Plan d'action pour la construction en bois d'oeuvre avance -- bois massif pour les immeubles a etages et prefabriques",
+      ],
+      tags: ["logement", "remise-TVH", "1,5M-logements", "construction", "abordabilite", "bois-massif"]
+    },
+    {
+      id: "justice-securite",
+      titre: "Securite publique, justice et securite frontaliere",
+      depenses: "32,5 M$ subventions securite frontaliere (2026-2027) · capacite correctionnelle elargie",
+      variation: "Operation Dissuasion 2.0 -- resultats significatifs depuis le lancement de 2025",
+      priorite: "haute",
+      resume: "L'Operation Dissuasion lancee en janvier 2025 a produit des resultats concrets : 550+ armes illegales retracees (440+ provenant des Etats-Unis), 4 152 kg de cocaine et 192 kg de fentanyl saisis, 641 accusations. L'Operation Dissuasion 2.0 elargit cela avec 32,5 M$ en nouvelles subventions de securite frontaliere.",
+      points: [
+        "Resultats de l'Operation Dissuasion : 550+ armes illegales retracees, 4 152 kg cocaine, 192 kg fentanyl saisis, 641 accusations",
+        "Operation Dissuasion 2.0 -- 32,5 M$ en 2026-2027 pour deux nouveaux programmes de subventions a la securite frontaliere",
+        "Legislation proposee pour renforcer le systeme de cautionnement et resserrer les exigences pour les recidivistes violents",
+        "Registre des delinquants sexuels et des trafiquants de l'Ontario -- exploration de l'accessibilite partielle au public",
+        "Investissements historiques dans la capacite correctionnelle -- place garantie pour les recidivistes a haut risque",
+        "Equipes specialisees de poursuite pour le cautionnement elargies",
+        "Formation d'un plus grand nombre de policiers -- obstacles reduits au recrutement et a la formation",
+        "Services de police des Premieres Nations appuyes",
+      ],
+      tags: ["justice", "police", "frontiere", "Operation-Dissuasion", "cautionnement", "etablissements", "traite-personnes"]
+    },
+    {
+      id: "abordabilite",
+      titre: "Abordabilite et cout de la vie",
+      depenses: "2,1 G$ economies taxe essence depuis 2022 · ~36 $/mois REO · Peages 407 Est supprimes",
+      variation: "Mesures rendues permanentes -- nouvelle remise TVH sur logement",
+      priorite: "haute",
+      resume: "Les mesures d'abordabilite consistent a consolider les gains existants et ajouter la remise TVH sur le logement. Reductions de la taxe sur l'essence permanentes (2,1 G$ economises). Peages de la 407 Est definitif supprimes (~7 200 $/an). Programme Une seule tarification prolonge de deux ans. La REO reduit d'environ 36 $/mois les factures d'electricite residentielles.",
+      points: [
+        "Reductions de la taxe sur l'essence et les carburants permanentes -- 2,1 G$ economises depuis juillet 2022",
+        "Peages autoroute 407 Est definitif supprimes -- ~7 200 $/an d'economies pour les navetteurs",
+        "Programme Une seule tarification prolonge de deux annees supplementaires",
+        "Remise pour l'electricite de l'Ontario (REO) -- reduction d'environ 36 $/mois pour le consommateur residentiel typique",
+        "Programme d'aide a l'energie pour les personnes a faible revenu (PAEBFR) se poursuit",
+        "Remise TVH sur les nouvelles maisons -- jusqu'a 80 000 $ de soulagement (voir section Logement)",
+        "66 M$ Fonds de fournitures pour la classe -- 750 $ par enseignant de classe homeroom au primaire",
+      ],
+      tags: ["abordabilite", "taxe-essence", "peages-407", "une-seule-tarification", "electricite", "cout-de-la-vie"]
+    },
+    {
+      id: "cadre-budgetaire",
+      titre: "Cadre budgetaire et gestion de la dette",
+      depenses: "Deficit 13,8 G$ (2026-2027) · Excedent 0,6 G$ (2028-2029) · 47,2 G$ emprunt (2026-2027)",
+      variation: "Deficit plus eleve que prevu au budget 2025 -- capital-driven",
+      priorite: "haute",
+      resume: "Le deficit de 2026 (13,8 G$) est plus eleve que prevu par le budget 2025 (7,8 G$) -- l'ecart est imputable au plan capital elargi (37 G$ en 2026-2027) et au pre-financement de 5 G$ du Compte Proteger l'Ontario. La trajectoire vers l'excedent en 2028-2029 (0,6 G$) est maintenue. Les cotes de credit solides de l'Ontario ont produit une demande sans precedent des investisseurs mondiaux.",
+      points: [
+        "Deficit 2025-2026 : 12,3 G$ (mieux que les 14,6 G$ projetes au budget 2025)",
+        "Deficit 2026-2027 : 13,8 G$ -- imputable a 28 G$ d'investissements provinciaux en capital",
+        "Deficit 2027-2028 : 6,1 G$ · Excedent 2028-2029 : 0,6 G$",
+        "Dette nette/PIB demeure sous la cible de 40 % tout au long du moyen terme",
+        "Emprunts a long terme 2026-2027 : 47,2 G$ -- 58,6 G$ completes en 2025-2026",
+        "Cotes de credit solides -- demande mondiale sans precedent pour la dette ontarienne",
+        "PIB 2025 reel : 1,2 % (mieux que 0,8 % projete) -- bonne surprise",
+        "PIB 2026 projete : 1,0 % · 2027 : 1,7 % · 2028 : 1,8 %",
+        "Chomage 2025 reel : 7,7 % · 2026 projete : 7,4 %",
+      ],
+      tags: ["deficit", "dette", "budgetaire", "PIB", "emprunts", "cote-credit", "excedent"]
+    },
+  ],
 
-audiences: [
-{
-id: “acheteurs-maison”,
-titre: “Acheteurs de maison”,
-priorite: “haute”,
-resume: “L’avantage direct le plus important du budget 2026 pour la plupart des Ontariens. La suppression de la totalité des 8 % de TVH provinciale sur les nouvelles maisons jusqu’à 1 M$ représente jusqu’à 80 000 $ d’allègement. Rétroactif au 20 mars 2025 — si vous avez acheté récemment, vous pourriez être admissible.”,
-mesures: [
-{ label: “TVH provinciale supprimée (nouvelles maisons jusqu’à 1 M$)”, valeur: “Jusqu’à 80 000 $”, note: “Maintenu pour les maisons jusqu’à 1,5 M$” },
-{ label: “Rétroactif au”, valeur: “20 mars 2025”, note: “Les achats antérieurs pourraient être admissibles” },
-{ label: “Économies sur les péages de l’autoroute 407 Est (annuelles)”, valeur: “7 200 $”, note: “Supprimés de façon permanente” },
-],
-tags: [“logement”, “TVH”, “nouvelles-maisons”, “premiers-acheteurs”]
-},
-{
-id: “familles”,
-titre: “Familles”,
-priorite: “haute”,
-resume: “Les familles bénéficient des économies permanentes sur la taxe sur l’essence (2,1 G$ depuis 2022), du programme Une seule tarification prolongé, de la stabilité des factures d’électricité via la REO, et du remboursement de TVH sur les nouvelles maisons. Le programme d’autisme reçoit 965 M$. Les centres de garde reçoivent 20 M$ en mises à niveau de sécurité.”,
-mesures: [
-{ label: “Économies taxe sur l’essence (depuis 2022)”, valeur: “2,1 G$”, note: “Permanentes — économies continues” },
-{ label: “Une seule tarification (prolongée 2 ans)”, valeur: “1 600 $/an”, note: “Navetteurs quotidiens GTO — 233 M$ économisés depuis 2024” },
-{ label: “Remise sur l’électricité (REO)”, valeur: “~36 $/mois”, note: “Réduction résidentielle typique” },
-{ label: “Programme ontarien services autisme”, valeur: “965 M$”, note: “186 M$ de nouveaux fonds en 2026-2027” },
-],
-tags: [“familles”, “taxe-essence”, “une-seule-tarification”, “électricité”, “autisme”, “garde-enfants”]
-},
-{
-id: “entreprises”,
-titre: “Entreprises et employeurs”,
-priorite: “haute”,
-resume: “Le plan d’action fiscal pluriannuel est la mesure déterminante pour les entreprises — réduction du taux d’imposition des petites entreprises de plus de 30 %, amortissement accéléré du capital (3,5 G$ d’allègement sur 4 ans). Le Fonds d’investissement de 4 G$ ouvre de nouvelles occasions. Combiné à ~10 G$ d’économies cumulatives depuis 2018, l’Ontario vise à être la juridiction la plus compétitive du G7.”,
-mesures: [
-{ label: “Réduction taux imposition petites entreprises”, valeur: “>30 %”, note: “Jusqu’à 5 000 $ d’allègement annuel par entreprise” },
-{ label: “Amortissement accéléré des immobilisations”, valeur: “3,5 G$ (4 ans)”, note: “Allègement fiscal provincial pour les entreprises admissibles” },
-{ label: “Fonds d’investissement Compte pour protéger l’Ontario”, valeur: “4 G$”, note: “IA, défense, fabrication avancée, sciences de la vie” },
-{ label: “Économies cumulatives pour les entreprises depuis 2018”, valeur: “~10 G$”, note: “Taux annuel” },
-],
-tags: [“entreprises”, “impôt”, “investissement”, “compétitivité”, “PME”]
-},
-{
-id: “travailleurs”,
-titre: “Travailleurs et chercheurs d’emploi”,
-priorite: “haute”,
-resume: “Les Centres POUVOIR ont aidé près de 15 000 travailleurs en 2025. L’accélération de la Ceinture de feu et l’expansion nucléaire créeront des dizaines de milliers d’emplois. Les règles de mobilité ‘De plein droit’ permettent aux travailleurs qualifiés d’exercer leur métier partout au Canada. Les 6,4 G$ pour l’enseignement supérieur préparent la prochaine génération.”,
-mesures: [
-{ label: “Centres POUVOIR (travailleurs touchés par les tarifs)”, valeur: “15 000 aidés”, note: “Aide à la transition et orientation vers l’emploi” },
-{ label: “Emplois expansion nucléaire”, valeur: “150 000+”, note: “Nouvelles occasions sur la durée du plan” },
-{ label: “Emplois Ceinture de feu”, valeur: “Des milliers”, note: “Construction commençant en juin 2026” },
-{ label: “Mobilité main-d’oeuvre (‘De plein droit’)”, valeur: “Premières au Canada”, note: “Travailler dans d’autres provinces sans recertification” },
-],
-tags: [“travailleurs”, “emplois”, “nucléaire”, “ceinture-de-feu”, “mobilité-main-oeuvre”, “postsecondaire”]
-},
-{
-id: “aines”,
-titre: “Aînés”,
-priorite: “haute”,
-resume: “Les SLD reçoivent 139,4 M$ additionnels en 2026-2027 — quatrième année consécutive d’investissement record en santé. L’expansion des soins primaires (3,4 G$ sur 4 ans) bénéficie de manière disproportionnée aux aînés. La REO et les économies sur la taxe sur l’essence aident aussi les aînés à revenu fixe.”,
-mesures: [
-{ label: “Financement additionnel foyers SLD”, valeur: “139,4 M$”, note: “2026-2027 — investissement record en cours” },
-{ label: “Plan d’action pour les soins primaires”, valeur: “3,4 G$ (4 ans)”, note: “Plus de médecins, accès élargi” },
-{ label: “Remise sur l’électricité (REO)”, valeur: “~36 $/mois”, note: “Factures stables et prévisibles” },
-{ label: “Taxe sur l’essence”, valeur: “Permanente”, note: “2,1 G$ économisés par les Ontariens depuis 2022” },
-],
-tags: [“aînés”, “SLD”, “soins-primaires”, “électricité”, “santé”]
-},
-{
-id: “autochtones”,
-titre: “Communautés autochtones”,
-priorite: “haute”,
-resume: “L’accélération de la Ceinture de feu est la grande histoire de développement économique autochtone de ce budget — routes ouvertes en novembre 2030, soutenues par des ententes avec trois Premières Nations et une entente de coopération fédérale. Les 6,4 G$ pour l’enseignement supérieur incluent les Instituts autochtones.”,
-mesures: [
-{ label: “Routes Ceinture de feu — début de la construction”, valeur: “Juin 2026”, note: “5 ans en avance — ententes avec 3 Premières Nations” },
-{ label: “Routes Ceinture de feu — ouverture”, valeur: “Nov 2030”, note: “Entente de coopération fédérale signée” },
-{ label: “Engagement de l’Ontario pour la Ceinture de feu”, valeur: “1 G$”, note: “Demande au fédéral de s’aligner” },
-{ label: “Instituts autochtones”, valeur: “Inclus dans 6,4 G$”, note: “Paquet de durabilité postsecondaire” },
-],
-tags: [“autochtones”, “ceinture-de-feu”, “premières-nations”, “postsecondaire”, “infrastructure”]
-},
-],
+  audiences: [
+    {
+      id: "travailleurs",
+      titre: "Travailleurs et chercheurs d'emploi",
+      priorite: "haute",
+      resume: "Le budget 2026 continue la protection agressive contre les tarifs. Les Centres POWER ont aide 15 000 travailleurs en 2025. Le secteur des batteries VE a maintenant des victoires concretes -- NextStar a ouvert a Windsor avec 1 300 travailleurs. Les regles de mobilite de la main-d'oeuvre permettent aux travailleurs de travailler plus facilement dans d'autres provinces.",
+      mesures: [
+        { label: "Centres POWER (travailleurs licencies)", valeur: "15 000 aides", note: "Depuis le lancement -- renvois a Emploi Ontario" },
+        { label: "NextStar Windsor -- emplois crees", valeur: "1 300+", note: "2 500 a pleine capacite" },
+        { label: "Economies taxe essence (permanentes)", valeur: "2,1 G$ depuis 2022", note: "Pour les travailleurs qui navettent" },
+        { label: "Mobilite main-d'oeuvre 'de plein droit'", valeur: "Premiere au Canada", note: "Travailler dans d'autres provinces sans recertification" },
+      ],
+      tags: ["travailleurs", "VE", "fabrication", "tarifs", "mobilite-main-oeuvre", "POWER"]
+    },
+    {
+      id: "familles",
+      titre: "Familles",
+      priorite: "haute",
+      resume: "La nouvelle remise TVH sur les maisons (jusqu'a 80 000 $) est la grande mesure pour les familles. Factures d'electricite reduites d'environ 36 $/mois. Peages 407 Est supprimes definitivement. Une seule tarification prolonge. Le Fonds Liam Riazati protege les enfants dans les centres de garde. L'autisme obtient 965 M$.",
+      mesures: [
+        { label: "Remise TVH sur nouvelles maisons", valeur: "Jusqu'a 80 000 $", note: "Maisons jusqu'a 1 M$ · maintenu jusqu'a 1,5 M$" },
+        { label: "Remise electricite (REO mensuelle)", valeur: "~36 $/mois", note: "Consommateur residentiel typique" },
+        { label: "Economies peages 407 Est (annuelles)", valeur: "~7 200 $", note: "Supprimes definitivement" },
+        { label: "Programme ontarien services en autisme 2026-2027", valeur: "965 M$", note: "Dont 186 M$ de nouveaux fonds" },
+      ],
+      tags: ["familles", "logement", "TVH", "electricite", "autisme", "services-de-garde"]
+    },
+    {
+      id: "aines",
+      titre: "Aines",
+      priorite: "haute",
+      resume: "Les soins de longue duree sont l'enjeu determinant -- pres de 26 000 lits maintenant approuves ou en construction sur l'objectif de 58 000. Les soins primaires (3,4 G$ sur 4 ans) beneficient de maniere disproportionnee aux aines. La REO reduit directement les couts de chauffage.",
+      mesures: [
+        { label: "Lits SLD approuves ou en construction", valeur: "26 000", note: "164 projets en fevrier 2026" },
+        { label: "Cible lits SLD d'ici 2028", valeur: "58 000", note: "6,4 G$ depuis 2019" },
+        { label: "Plan d'action soins primaires", valeur: "3,4 G$ / 4 ans", note: "Connecter chaque Ontarien a un medecin" },
+        { label: "Remise electricite (REO)", valeur: "~36 $/mois", note: "Reduction couts de chauffage" },
+      ],
+      tags: ["aines", "SLD", "soins-primaires", "electricite"]
+    },
+    {
+      id: "entreprises",
+      titre: "Entreprises et employeurs",
+      priorite: "haute",
+      resume: "Pres de 10 G$ en economies et soutiens annuels. Plan d'action fiscal en mode pluriannuel. La Loi d'achat Ontario cree des obligations de conformite mais aussi des occasions d'approvisionnement. Le Fonds d'investissement de 4 G$ cible les secteurs a forte croissance.",
+      mesures: [
+        { label: "Economies et soutiens annuels estimes", valeur: "~10 G$", note: "Via divers programmes depuis 2018" },
+        { label: "Fonds d'investissement Compte Proteger l'Ontario", valeur: "4 G$", note: "IA, defense, fabrication avancee, sciences de la vie" },
+        { label: "Reports d'impots (liquidites)", valeur: "9 G$", note: "Avril-octobre 2025 -- complete" },
+        { label: "Fonds Ontario ensemble commercial (nouveau)", valeur: "+100 M$", note: "Novembre 2025 -- marches interprovinciaux" },
+      ],
+      tags: ["entreprises", "impot", "investissement", "achat-Ontario", "competitivite"]
+    },
+    {
+      id: "acheteurs-maisons",
+      titre: "Acheteurs de maisons",
+      priorite: "haute",
+      resume: "La remise TVH est la plus grande mesure de logement depuis des annees -- supprimer la totalite de la portion provinciale de 8 % pour les maisons jusqu'a 1 M$, jusqu'a 80 000 $ de soulagement. Retroactive au 20 mars 2025. Devrait stimuler des milliers de mises en chantier et 14 000 emplois en construction.",
+      mesures: [
+        { label: "Remise TVH (nouvelles maisons jusqu'a 1 M$)", valeur: "Jusqu'a 80 000 $", note: "Portion provinciale de 8 % supprimee · maintenu jusqu'a 1,5 M$" },
+        { label: "Date retroactive", valeur: "20 mars 2025", note: "En collaboration avec le gouvernement federal" },
+        { label: "Stimulus mises en chantier", valeur: "Des milliers", note: "Attendu de la remise TVH" },
+        { label: "Emplois en construction soutenus", valeur: "14 000", note: "De la mesure de remise TVH" },
+      ],
+      tags: ["logement", "remise-TVH", "acheteurs", "nouvelles-maisons", "construction"]
+    },
+    {
+      id: "navetteurs",
+      titre: "Navetteurs et usagers du transport en commun",
+      priorite: "haute",
+      resume: "Deux nouvelles lignes de transport en commun ont ouvert a Toronto. L'autoroute 413 et le contournement de Bradford sont en construction. Peages 407 Est supprimes definitivement. Une seule tarification prolonge de deux ans. Le Northlander revient en 2026. GO Transit s'etend avec service de fin de semaine vers Kitchener.",
+      mesures: [
+        { label: "Deux nouvelles lignes Toronto", valeur: "Ouvertes 2025-2026", note: "TLR Finch Ouest + TLR Croix de Lumiere" },
+        { label: "Economies peages 407 Est", valeur: "~7 200 $/an", note: "Supprimes definitivement" },
+        { label: "Prolongation Une seule tarification", valeur: "+2 ans", note: "Economies ~1 600 $/an pour le navetteur moyen" },
+        { label: "Retour du Northlander", valeur: "2026", note: "Service ferroviaire Nord de l'Ontario -- Toronto" },
+      ],
+      tags: ["transport-en-commun", "navetteurs", "407", "une-seule-tarification", "GO", "TLR", "Northlander"]
+    },
+    {
+      id: "autochtones",
+      titre: "Communautes autochtones",
+      priorite: "haute",
+      resume: "La Ceinture de feu est le moment determinant -- construction en juin 2026 avec des accords avec trois Premieres Nations et un accord de cooperation federal. Un projet, Un processus engage des communautes autochtones dans trois grands projets miniers. Services de police des Premieres Nations finances.",
+      mesures: [
+        { label: "Construction routes Ceinture de feu", valeur: "Debut juin 2026", note: "Accords avec 3 Premieres Nations" },
+        { label: "Ouverture des routes", valeur: "Novembre 2030", note: "Cinq ans avant le calendrier initial" },
+        { label: "Duplication federale eliminee", valeur: "Accord de cooperation", note: "EE et Evaluation d'impact alignees" },
+        { label: "Partenariats routiers avec Premieres Nations", valeur: "Renouveles", note: "Connexion des communautes au reseau routier provincial" },
+      ],
+      tags: ["autochtones", "ceinture-de-feu", "premieres-nations", "mines", "routes", "police"]
+    },
+  ],
 
-parties_prenantes: [
-{
-id: “fabrication-automobile”,
-titre: “Fabrication et secteur automobile”,
-priorite: “haute”,
-resume: “Le Fonds d’investissement Compte pour protéger l’Ontario (4 G$) est le nouvel outil — il cible spécifiquement la fabrication avancée aux côtés de l’IA, de la défense et des sciences de la vie. L’amortissement accéléré (3,5 G$ sur 4 ans) récompense directement l’investissement en capital manufacturier. La réduction du taux d’imposition des petites entreprises et les règles de mobilité de la main-d’oeuvre améliorent la compétitivité structurelle.”,
-enjeux: [
-“Fonds d’investissement (4 G$) : la fabrication avancée est nommément incluse — engagez-vous tôt sur les critères d’admissibilité”,
-“Amortissement accéléré (3,5 G$/4 ans) : modélisez l’impact sur vos décisions d’investissement maintenant”,
-“Réduction taux petites entreprises (>30 %) : significative pour les fournisseurs PME de la chaîne d’approvisionnement automobile”,
-“Mobilité main-d’oeuvre ‘De plein droit’ : embauche de travailleurs qualifiés d’autres provinces beaucoup plus rapide”,
-“FOEC (100 M$ additionnels) : si vous diversifiez hors des marchés américains, postulez maintenant”,
-“Un projet, un processus : si vous avez un grand projet en attente d’approbation, engagez-vous avec le cadre”,
-],
-tags: [“fabrication”, “automobile”, “impôt”, “capital”, “mobilité-main-oeuvre”, “investissement”]
-},
-{
-id: “hopitaux”,
-titre: “Hôpitaux et organisations de santé”,
-priorite: “haute”,
-resume: “Plus de 1,1 G$ en financement hospitalier additionnel pour la 4e année consécutive. Le programme de subventions capital de 50 G$ pour l’infrastructure hospitalière continue. L’expansion des soins primaires (3,4 G$) modifiera les flux de patients. Les 139,4 M$ additionnels pour les SLD sont bienvenus mais la pénurie de main-d’oeuvre reste la contrainte liant la livraison.”,
-enjeux: [
-“Financement hospitalier additionnel (1,1 G$+) : confirmer votre part et les engagements opérationnels qui l’accompagnent”,
-“Plan soins primaires (3,4 G$/4 ans) : plus de patients connectés à un médecin de famille change les patterns aux urgences”,
-“Expansion des facultés de médecine : approvisionnement en médecins à long terme — planifier pour le pipeline de 5 à 10 ans”,
-“Financement additionnel SLD (139,4 M$) : la main-d’oeuvre reste la contrainte principale, pas le capital”,
-“Subventions capital (50 G$) : confirmer où votre projet se situe dans la file de priorité”,
-“Wesleyville (10 500 emplois) : surveiller les besoins en infrastructure de services de santé dans la région de Port Hope”,
-],
-tags: [“hôpitaux”, “capital”, “soins-primaires”, “SLD”, “dotation-personnel”]
-},
-{
-id: “construction”,
-titre: “Secteur de la construction et de l’immobilier”,
-priorite: “haute”,
-resume: “37 G$ en 2026-2027 seulement. La construction est maintenant réellement en cours sur la 413, le contournement de Bradford, la ligne Ontario et le prolongement du métro de Scarborough. Le remboursement de TVH sur les nouvelles maisons pourrait stimuler des milliers de mises en chantier et 14 000 emplois. Les routes de la Ceinture de feu commencent en juin 2026.”,
-enjeux: [
-“Routes Ceinture de feu (départ juin 2026) : construction nordique spécialisée — positionnez-vous maintenant”,
-“Remboursement TVH nouvelles maisons : 14 000 emplois projetés — hausse prévue dans le secteur résidentiel”,
-“Autoroute 413 et contournement Bradford : construction active — occasions pour sous-traitants et matériaux”,
-“Ligne Ontario et prolongements de métro : excavation et construction actives — approvisionnement en cours”,
-“RPM Darlington et nucléaire Wesleyville : pipeline de construction nucléaire spécialisée”,
-“Amortissement accéléré : appliquez à vos propres achats d’équipement pour l’allègement fiscal”,
-],
-tags: [“construction”, “logement”, “transport-en-commun”, “autoroutes”, “nucléaire”, “ceinture-de-feu”]
-},
-{
-id: “municipalites”,
-titre: “Municipalités et AMO”,
-priorite: “haute”,
-resume: “Le remboursement de TVH sur les nouvelles maisons stimule l’offre — les municipalités bénéficient de plus de mises en chantier. L’accélération des routes de la Ceinture de feu crée de nouvelles zones économiques dans le Nord. La prolongation d’Une seule tarification maintient les chiffres de fréquentation du transport en commun. Le déficit fiscal provincial-municipal sur les budgets opérationnels demeure toutefois non résolu.”,
-enjeux: [
-“Remboursement TVH nouvelles maisons : implications sur les redevances de développement — modélisez vos prévisions de revenus”,
-“Accélération Ceinture de feu : développement économique des communautés des Premières Nations du Nord”,
-“Jalons transit capital : confirmer les implications opérationnelles des extensions GO et du métro”,
-“Opération Dissuasion 2.0 (32,5 M$) : les municipalités de régions frontalières bénéficient directement”,
-“Postsecondaire (6,4 G$) : signal de développement économique pour les villes universitaires et collégiales”,
-“Déficit de financement opérationnel : toujours non résolu — priorité de plaidoyer pour le budget 2027”,
-],
-tags: [“municipalités”, “logement”, “transport-en-commun”, “nord-ontario”, “financement-opérationnel”]
-},
-{
-id: “postsecondaire”,
-titre: “Collèges, universités et Instituts autochtones”,
-priorite: “haute”,
-resume: “Les 6,4 G$ en nouveaux fonds pour l’enseignement supérieur sont transformateurs — ils répondent directement à la crise financière qui a vu des compressions de programmes, des mises à pied et des quasi-insolvabilités dans plusieurs établissements. Le cadrage est économique — former des diplômés compétitifs pour l’économie du G7.”,
-enjeux: [
-“6,4 G$ nouveaux fonds : confirmer la formule d’allocation — quelle part revient à votre établissement?”,
-“Axe durabilité : s’agit-il de fonds opérationnels ou en capital? Pluriannuels ou ponctuels? Les détails sont essentiels”,
-“Instituts autochtones explicitement inclus : confirmer enveloppe dédiée vs allocation générale”,
-“Cadrage compétitivité G7 : attendre des conditions sur la composition des programmes et les résultats des diplômés”,
-“Lien postsecondaire + Ceinture de feu : programmes de développement des ressources alignés sur les opportunités”,
-“Mobilité main-d’oeuvre ‘De plein droit’ : les changements de reconnaissance des titres de compétences affecteront vos programmes”,
-],
-tags: [“postsecondaire”, “collèges”, “universités”, “instituts-autochtones”, “durabilité”]
-},
-{
-id: “energie-nucleaire-industrie”,
-titre: “Secteur de l’énergie et industrie nucléaire”,
-priorite: “haute”,
-resume: “Wesleyville est le titre — un nouvel accord de projet nucléaire signé, 10 500 emplois, 235 G$ d’impact sur le PIB. La remise en état de l’unité 4 de Darlington est terminée, en avance et sous budget — une preuve de concept solide. Quatre RPM à Darlington sont les premiers du G7. L’Ontario recherche activement l’exportation mondiale de son expertise nucléaire.”,
-enjeux: [
-“Projet nucléaire Wesleyville : 10 500 emplois — occasions dans la chaîne d’approvisionnement partout en Ontario”,
-“Quatre RPM à Darlington : premiers du G7 — preuve de concept mondiale avec implications d’exportation”,
-“Stratégie d’exportation nucléaire : occasion mondiale — s’engager dans le positionnement international de l’Ontario”,
-“Remise en état Darlington (150 M$ sous budget) : bilan solide de gestion des coûts pour les investisseurs”,
-“Corridor énergétique Ceinture de feu : infrastructure énergétique requise pour le développement routier et minier”,
-“REO : gouvernement engagé à maintenir des coûts d’électricité stables et prévisibles — signal de tarification”,
-],
-tags: [“nucléaire”, “énergie”, “RPM”, “Wesleyville”, “Darlington”, “exportation”]
-},
-{
-id: “tech-ia-defense”,
-titre: “Technologies, IA et industrie de la défense”,
-priorite: “haute”,
-resume: “Le Fonds d’investissement (4 G$) cible explicitement l’IA, la défense et la fabrication avancée — conçu pour attirer des capitaux de fonds de pension et du secteur privé. L’Ontario mise activement sur l’accueil de la Banque de défense, de sécurité et de résilience à Toronto. La flambée des dépenses mondiales de défense crée une occasion générationnelle pour les grappes aérospatiales et technologiques de l’Ontario.”,
-enjeux: [
-“Fonds d’investissement (4 G$) : IA et défense explicitement inclus — engagez-vous tôt sur les critères”,
-“Banque de défense, sécurité et résilience : candidature de Toronto — 3 500 emplois directs + des milliers indirects si Toronto est sélectionnée”,
-“Hausse des dépenses fédérales de défense : Ontario positionné comme fournisseur clé — alignez votre feuille de route”,
-“Cadre Un projet, un processus : si votre projet implique de l’infrastructure d’IA ou des installations de technologie de défense, engagez-vous”,
-“Postsecondaire 6,4 G$ : pipeline de talents pour les entreprises d’IA et de défense — engagez-vous avec les établissements”,
-“Tech nucléaire/RPM : occasion d’exportation mondiale — applications technologiques à double usage”,
-],
-tags: [“IA”, “défense”, “tech”, “fonds-investissement”, “BDSRB”, “nucléaire”]
-},
-],
+  parties_prenantes: [
+    {
+      id: "secteur-auto-ve",
+      titre: "Secteur automobile et fabrication VE",
+      priorite: "haute",
+      resume: "Le developpement le plus determinant du budget pour le secteur automobile : NextStar a ouvert. PowerCo est en bonne voie. Vianode et Asahi Kasei investissent des milliards. Le pacte automobile avec le gouvernement federal protege les investissements de 5 G$ et 7 G$.",
+      enjeux: [
+        "Grande ouverture NextStar Windsor 5 mars 2026 -- 2 500 emplois a pleine capacite : positionner les fournisseurs maintenant",
+        "Usine PowerCo St. Thomas en bonne voie -- plus grand projet PowerCo a l'echelle mondiale : occasion pour la chaine d'approvisionnement",
+        "Graphite synthetique Vianode 3,2 G$ St. Thomas -- suivre le calendrier de production",
+        "Pacte automobile confirme pour NextStar 5 G$ + PowerCo 7 G$ -- engagement federal protege",
+        "85 M$ O-AMP et OVIN : evaluer l'admissibilite aux subventions de modernisation",
+        "Loi d'achat Ontario : examiner les relations d'approvisionnement gouvernementales -- conformite obligatoire",
+      ],
+      tags: ["automobile", "VE", "batteries", "NextStar", "PowerCo", "chaine-approvisionnement"]
+    },
+    {
+      id: "hopitaux",
+      titre: "Hopitaux et organisations de sante",
+      priorite: "haute",
+      resume: "Le capital en sante est passe a 64 G$ sur 10 ans avec de grands nouveaux projets. Peter Gilgan Mississauga, Campus civique Ottawa et Fancsy Family Windsor sont les projets phares. SLD a 26 000 lits approuves. Les soins primaires (3,4 G$) changeront les schemas de flux de patients.",
+      enjeux: [
+        "Capital maintenant a 64 G$ sur 10 ans -- confirmer l'approbation capital de votre hopital et le financement operationnel",
+        "Peter Gilgan Mississauga plus grand hopital d'enseignement au Canada -- implications pour la structure du systeme de sante GTA",
+        "Campus civique Hopital Ottawa -- soins actifs principaux pour l'Est de l'Ontario : implications de planification regionale",
+        "SLD : 164 projets a 26 000 lits -- si pas encore approuve, le plaidoyer pour les 32 000 lits restants est urgent",
+        "Soins primaires 3,4 G$ sur 4 ans -- plus d'Ontariens connectes a des medecins de famille change les dynamiques aux urgences",
+        "Autisme : 965 M$ dont 186 M$ nouveaux -- confirmer l'acces pour les enfants et familles de votre territoire",
+      ],
+      tags: ["hopitaux", "capital", "SLD", "soins-primaires", "Mississauga", "Ottawa"]
+    },
+    {
+      id: "construction",
+      titre: "Industrie de la construction et de l'immobilier",
+      priorite: "haute",
+      resume: "Le pipeline est reel et actif -- 210 G$+ sur 10 ans avec 37 G$ en 2026-2027. L'autoroute 413 et le contournement de Bradford sont en construction active. Les routes de la Ceinture de feu commencent en juin 2026. La remise TVH va stimuler les mises en chantier. La Construction en bois avance cree une nouvelle demande de produits.",
+      enjeux: [
+        "37 G$ en 2026-2027 : total annuel le plus eleve de l'histoire de l'Ontario -- se positionner pour les contrats maintenant",
+        "Transport en commun 63 G$ (10 ans) : Ontario Line, Subway Scarborough, projets TLR -- tous activement en mouvement",
+        "Stimulus remise TVH : des milliers de nouvelles mises en chantier attendues -- se preparer pour une hausse du travail residentiel",
+        "Plan d'action Construction en bois avance : demande de bois massif va croitre -- nouvelle occasion de chaine d'approvisionnement",
+        "Routes Ceinture de feu juin 2026 : occasion specialisee de construction nordique",
+        "Mobilite main-d'oeuvre 'de plein droit' : les travailleurs des autres provinces peuvent etre embauches plus facilement",
+      ],
+      tags: ["construction", "capital", "transport-en-commun", "logement", "bois-massif", "ceinture-de-feu"]
+    },
+    {
+      id: "mines-mineraux",
+      titre: "Industrie miniere et mineraux critiques",
+      priorite: "haute",
+      resume: "L'acceleration du calendrier de la Ceinture de feu (debut juin 2026, ouverture novembre 2030) est transformatrice. Un projet, Un processus a trois grands projets en cours d'acceleration. Le Fonds d'investissement de 4 G$ cible explicitement les mineraux critiques. Le premier RPM du G7 donne a l'Ontario un avantage energetique unique.",
+      enjeux: [
+        "Routes Ceinture de feu debut juin 2026 : s'engager MAINTENANT avec les trois Premieres Nations cosignataires et les contacts provinciaux",
+        "Un projet, Un processus : Frontier Lithium, Canada Nickel, Kinross sont dans le programme -- postuler pour votre projet",
+        "Fonds d'investissement Compte Proteger l'Ontario (4 G$) : mineraux critiques explicitement cibles -- se positionner pour attirer le co-investissement",
+        "Premier RPM du G7 : l'Ontario a un avantage energetique pour les operations minieres et de traitement energivores",
+        "Accord de cooperation federal elimine la duplication des EA -- delais de projet plus courts",
+        "Ontario demande a Ottawa d'egaler 1 G$+ pour la Ceinture de feu -- defendre l'engagement federal",
+      ],
+      tags: ["mines", "ceinture-de-feu", "mineraux-critiques", "RPM", "permis", "autochtones"]
+    },
+    {
+      id: "postsecondaire-secteur",
+      titre: "Colleges, universites et instituts autochtones",
+      priorite: "haute",
+      resume: "Les 6,4 G$ de nouveaux fonds pour le postsecondaire sont l'investissement sectoriel le plus important depuis des annees -- s'attaquant directement a la crise de viabilite. Combine a 5,5 G$ en capital sur 10 ans, les etablissements ont un cadre pour planifier.",
+      enjeux: [
+        "6,4 G$ de nouveaux fonds : comprendre l'echeancier de versement et les criteres d'admissibilite pour votre etablissement",
+        "5,5 G$ de capital sur 10 ans dont 2,2 G$ en subventions : soumettre les projets capital prioritaires",
+        "Mandat : 'etablissements viables qui produisent une main-d'oeuvre competitive du G7' -- aligner la planification des programmes",
+        "Instituts autochtones explicitement inclus -- engagement sur le flux de financement specifique",
+        "Alignement des competences avec les secteurs du Fonds d'investissement : IA, defense, fabrication avancee, sciences de la vie",
+        "Contexte politique immigration : reductions federales des residents temporaires affectera la planification des inscriptions",
+      ],
+      tags: ["postsecondaire", "colleges", "universites", "instituts-autochtones", "viabilite", "competences"]
+    },
+    {
+      id: "defense",
+      titre: "Industrie de la defense et aerospatiale",
+      priorite: "haute",
+      resume: "L'Ontario cherche activement le siege de la Banque de defense, securite et resilience (BDSR) pour Toronto -- devrait creer 3 500 emplois directs. Le Fonds d'investissement de 4 G$ cible explicitement la defense. La defense nationale est identifiee comme un pilier de plus en plus important.",
+      enjeux: [
+        "Candidature siege BDSR pour Toronto -- 3 500 emplois directs plus des milliers indirects : appuyer la candidature",
+        "Fonds d'investissement Compte Proteger l'Ontario (4 G$) : defense explicitement ciblee -- se positionner pour le co-investissement",
+        "Hausse des depenses de defense federales pour atteindre les engagements OTAN : grappe aerospatiale et defense de l'Ontario bien positionnee",
+        "Cadre Un projet, Un processus : application potentielle pour l'infrastructure liee a la defense",
+        "Routes d'acces Ceinture de feu : double application civile-defense potentielle",
+        "Completion RPM nucleaire : nexus defense/energie de l'Ontario renforce",
+      ],
+      tags: ["defense", "BDSR", "Toronto", "aerospatiale", "OTAN", "investissement"]
+    },
+  ],
 
-glossaire: [
-{ terme: “Fonds d’investissement Compte pour protéger l’Ontario”, def: “Nouveau fonds de 4 G$ annoncé dans le budget 2026 pour investir dans des industries à forte croissance incluant l’IA, la défense, la fabrication avancée, les sciences de la vie, la biotechnologie et la R-D en minéraux critiques. Conçu pour attirer des capitaux de fonds de pension et du secteur privé.” },
-{ terme: “Un projet, un processus”, def: “Cadre de l’Ontario pour accélérer les approbations des grands projets de ressources — exploration avancée, développement et expansion miniers. Élimine le dédoublement entre les processus provinciaux et fédéraux. Trois projets déjà en voie rapide : Frontier Lithium, Canada Nickel Crawford, Kinross Great Bear.” },
-{ terme: “Remboursement TVH (nouvelles maisons)”, def: “Mesure phare d’abordabilité du logement du budget 2026 : supprime la totalité des 8 % de TVH provinciale sur les nouvelles maisons jusqu’à 1 million de dollars, avec l’allègement maintenu pour les maisons jusqu’à 1,5 million de dollars. Jusqu’à 80 000 $ d’économies. Rétroactif au 20 mars 2025.” },
-{ terme: “Centres POUVOIR”, def: “Centres de réponse en matière d’emploi pour la protection des travailleurs ontariens — centres d’aide provinciaux offrant une aide à la transition, des références et l’accès aux programmes d’Emploi Ontario pour les travailleurs touchés par les mises à pied liées aux tarifs. Ont aidé près de 15 000 travailleurs en 2025.” },
-{ terme: “Ceinture de feu”, def: “Zone riche en minéraux dans le Grand Nord de l’Ontario. Le budget 2026 accélère la construction de routes tout-temps de 5 ans : construction commence en juin 2026, routes ouvertes en novembre 2030. Soutenu par des ententes avec trois Premières Nations et une entente de coopération fédérale.” },
-{ terme: “Réacteur de petite puissance modulaire (RPM)”, def: “Réacteurs nucléaires compacts construits sur le site de Darlington en Ontario — les premiers du G7. Quatre RPM prévus, qui produiront assez d’électricité pour alimenter environ 1,2 million de foyers. Partie de la stratégie d’expansion nucléaire qui devrait créer 150 000 emplois.” },
-{ terme: “Remise sur l’électricité de l’Ontario (REO)”, def: “Programme provincial qui réduit les factures d’électricité des consommateurs résidentiels et non résidentiels admissibles. La REO réduit la facture mensuelle d’un consommateur résidentiel typique d’environ 36 $, assurant des coûts d’électricité stables et prévisibles.” },
-{ terme: “Une seule tarification”, def: “Programme d’intégration tarifaire du transport en commun de l’Ontario permettant aux navetteurs du GTO de voyager sur GO Transit, le TTC et les systèmes de transport en commun locaux participants avec une seule tarification. Prolongé de deux ans dans le budget 2026. Économise jusqu’à 1 600 $/an — 233 millions d’économies depuis le lancement en 2024.” },
-{ terme: “Plan d’action fiscal”, def: “Plan pluriannuel de l’Ontario pour faire de la province la juridiction la plus compétitive du G7. Mesures du budget 2026 : réduction du taux d’imposition des petites entreprises de plus de 30 %, amortissement accéléré du capital (3,5 G$ sur 4 ans), et élimination des barrières au commerce interprovincial.” },
-{ terme: “Mobilité de la main-d’oeuvre ‘De plein droit’”, def: “Règlement en vigueur depuis janvier 2026 — le premier au Canada — qui permet aux travailleurs qualifiés d’exercer leur métier ou profession réglementé en Ontario sans inscription supplémentaire ni recertification de leur province d’origine. Répond directement aux pénuries de main-d’oeuvre spécialisée.” },
-],
+  glossaire: [
+    { terme: "Fonds d'investissement Compte Proteger l'Ontario", def: "Nouveau fonds de 4 G$ annonce dans le budget 2026, gere en partenariat avec un gestionnaire de placement prive. Cible l'IA, la defense, la fabrication avancee, les sciences de la vie, la biotechnologie et les mineraux critiques. Concu pour attirer les fonds de pension et le capital prive." },
+    { terme: "Loi d'achat Ontario", def: "Nouvelle legislation exigeant des biens et services d'approvisionnement national dans les projets finances par la province. Cree des obligations de conformite pour les fournisseurs gouvernementaux mais aussi d'importantes occasions d'approvisionnement pour les entreprises ontariennes." },
+    { terme: "Un projet, Un processus", def: "Cadre lance en octobre 2025 pour accelerer les approbations pour les projets miniers. Elimine la duplication entre les processus provinciaux et federaux. Trois grands projets deja inscrits : Frontier Lithium PAK, Canada Nickel Crawford, Kinross Gold Great Bear." },
+    { terme: "Ceinture de feu", def: "Gisements de chromite, nickel, cuivre et platine dans le Grand Nord de l'Ontario. Le budget 2026 accelere la construction des routes de 5 ans -- debut juin 2026, routes ouvertes novembre 2030. Soutenu par des accords avec trois Premieres Nations et un accord de cooperation federal." },
+    { terme: "Remise TVH (nouvelles maisons)", def: "L'Ontario supprime la totalite de la portion provinciale de TVH de 8 % pour les nouvelles maisons admissibles d'au plus un million de dollars -- jusqu'a 80 000 $ de soulagement. Maintenu pour les maisons jusqu'a 1,5 M$. Retroactive au 20 mars 2025. Devrait stimuler des milliers de mises en chantier et soutenir 14 000 emplois en construction." },
+    { terme: "RPM (Reacteur de petite taille modulaire)", def: "L'Ontario a complete le premier RPM du G7 -- une etape historique dans l'energie nucleaire. Plus petits et plus rapides a construire que les reacteurs traditionnels. L'Ontario poursuit maintenant quatre nouveaux RPM a Darlington. Donne a l'Ontario un avantage energetique unique pour attirer les industries energivores." },
+    { terme: "NextStar Energy", def: "L'usine de batteries lithium-ion de 5 G$ a Windsor, ouverte le 5 mars 2026. Coentreprise de Stellantis et LG Energy Solution. Plus d'un million de cellules de batterie produites et 1 300 travailleurs embauchees a l'ouverture, 1 200 de plus a pleine capacite. Premiere installation de batteries a echelle commerciale au Canada." },
+    { terme: "Centres POWER", def: "Centres de reponse a l'emploi Proteger les travailleurs ontariens. Lances en 2025 pour fournir une aide de transition -- renvois, acces aux programmes d'Emploi Ontario -- aux travailleurs touches par les licenciements lies aux tarifs. Ont aide pres de 15 000 travailleurs en 2025." },
+    { terme: "Fonds Ontario ensemble commercial (FOEC)", def: "Fonds pour aider les entreprises ontariennes a se reconvertir et a trouver de nouveaux marches au-dela des Etats-Unis. 100 M$ supplementaires investis en novembre 2025. Soutient les clients interprovinciaux, la resilience commerciale et le rapatriement de la chaine d'approvisionnement." },
+    { terme: "Operation Dissuasion", def: "Cadre de securite frontaliere de l'Ontario lance en janvier 2025. Application frontaliere renforcee de la PPO. Resultats : 550+ armes illegales retracees (440+ des Etats-Unis), 4 152 kg de cocaine saisis, 192 kg de fentanyl saisis, 641 accusations. L'Operation Dissuasion 2.0 elargit cela avec 32,5 M$ en nouvelles subventions de securite frontaliere." },
+  ],
 
-comparaison: {
-annee_precedente: “2025-2026”,
-elements: [
-{ label: “Déficit”, avant: “-14,6 G$ (prévision budget 2025)”, apres: “-13,8 G$”, direction: “up” },
-{ label: “Déficit 2025-2026 révisé”, avant: “-14,6 G$ (prévu)”, apres: “-12,3 G$ (intérimaire)”, direction: “up” },
-{ label: “Plan capital (annuel)”, avant: “33 G$”, apres: “37 G$”, direction: “up” },
-{ label: “Plan capital (total 10 ans)”, avant: “200 G$+”, apres: “210 G$+”, direction: “up” },
-{ label: “PIB 2025 (réel)”, avant: “0,8 % (prévision)”, apres: “1,2 % (réel)”, direction: “up” },
-{ label: “Retour à l’équilibre”, avant: “2027-2028”, apres: “2028-2029”, direction: “down” },
-{ label: “Taux imposition petites entreprises”, avant: “Taux standard”, apres: “Réduit de >30 %”, direction: “up” },
-{ label: “TVH sur les nouvelles maisons”, avant: “8 % portion provinciale”, apres: “Supprimée (jusqu’à 1 M$)”, direction: “up” },
-]
-},
+  comparaison: {
+    annee_precedente: "2025-2026",
+    elements: [
+      { label: "Deficit", avant: "-14,6 G$ (prevision budget 2025)", apres: "-13,8 G$ (2026-2027)", direction: "up" },
+      { label: "Deficit 2025-2026 (reel)", avant: "-14,6 G$ (projete)", apres: "-12,3 G$ (reel)", direction: "up" },
+      { label: "Plan capital total (10 ans)", avant: "200 G$+", apres: "210 G$+", direction: "up" },
+      { label: "Capital annuel (annee en cours)", avant: "33 G$ (2025-2026)", apres: "37 G$ (2026-2027)", direction: "up" },
+      { label: "Capital hospitalier (10 ans)", avant: "56 G$", apres: "64 G$", direction: "up" },
+      { label: "Croissance PIB reel (2025 reel)", avant: "0,8 % (projete)", apres: "1,2 % (reel)", direction: "up" },
+      { label: "Retour a l'equilibre", avant: "2027-2028 (0,2 G$)", apres: "2028-2029 (0,6 G$)", direction: "down" },
+      { label: "Lits SLD approuves/construction", avant: "23 977 (avr. 2025)", apres: "26 000 (fev. 2026)", direction: "up" },
+    ]
+  },
 
-sources: {
-plan: “https://www.ontario.ca/fr/document/budget-de-lontario-2026”,
-bref: “https://www.ontario.ca/fr/page/budget-de-lontario”,
-},
+  sources: {
+    plan: "https://www.ontario.ca/fr/document/budget-de-lontario-2026",
+    bref: "https://www.ontario.ca/fr/page/budget-de-lontario",
+  },
 
-notebook: {
-url: “”,
-label: “Explorer le notebook du budget Ontario”,
-note: “NotebookLM par Google · Gratuit · Compte Google requis”,
-},
+  notebook: {
+    url: "",
+    label: "Explorer le notebook du budget Ontario",
+    note: "NotebookLM par Google · Gratuit · Compte Google requis",
+  },
 };
