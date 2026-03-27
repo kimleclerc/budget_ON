@@ -1,406 +1,409 @@
 // =========================================================
-// ONTARIO BUDGET 2025 — ENGLISH DATA
-// "A Plan to Protect Ontario"
+// ONTARIO BUDGET 2026 — ENGLISH DATA
+// “A Plan to Protect Ontario”
 // Minister of Finance: Peter Bethlenfalvy
-// Tabled: April 2025
+// Tabled: March 25, 2026
 // =========================================================
 
 const BUDGET_EN = {
-  lang: "en",
-  annee: "2025-2026",
-  titre: "Ontario Budget 2025",
-  titre_complet: "A Plan to Protect Ontario",
-  date_depot: "April 2025",
-  ministre: "Peter Bethlenfalvy",
-  status: "live",
+lang: “en”,
+annee: “2026-2027”,
+titre: “Ontario Budget 2026”,
+titre_complet: “A Plan to Protect Ontario”,
+date_depot: “March 25, 2026”,
+ministre: “Peter Bethlenfalvy”,
+status: “live”,
 
-  quote: {
-    texte: "We need to make bold, lasting change that makes Ontario the most competitive economy in the G7 to invest, create jobs and do business. We need to do it now.",
-    auteur: "Peter Bethlenfalvy",
-    titre: "Minister of Finance, Ontario — 2025 Budget",
-  },
+quote: {
+texte: “Navigating these challenges requires a pragmatic approach — our prudent fiscal plan is more important than ever. We are delivering on our plan to build the most competitive, resilient and self-reliant economy in the G7.”,
+auteur: “Peter Bethlenfalvy”,
+titre: “Minister of Finance, Ontario — Budget 2026”,
+},
 
-  chiffres: [
-    { label: "Deficit 2025-26", valeur: "-$14.6 B", note: "Tariff response, infrastructure and services", variation: "Up from -$6.0 B in 2024-25", direction: "down" },
-    { label: "Path to balance", valeur: "2027-28", note: "Projected surplus of $0.2 B", variation: "Deficit -$7.8 B in 2026-27", direction: "up" },
-    { label: "Capital plan (10 yr)", valeur: "$200 B+", note: "Highways, transit, hospitals, schools", variation: "Over $33 B in 2025-26 alone", direction: "up" },
-    { label: "Net debt-to-GDP", valeur: "37.9%", note: "2025-26 — target below 40%", variation: "Down from 39.2% (2024 Budget forecast)", direction: "up" },
-    { label: "Business support (immediate)", valeur: "$11 B", note: "Tariff response: deferrals + WSIB rebates", variation: "New — largest package in Ontario history", direction: "neutral" },
-    { label: "GDP growth (2025)", valeur: "0.8%", note: "Tariff-impacted — down from 1.5% in 2024", variation: "Recovering to 1.0% (2026), 1.9% (2027)", direction: "down" },
-  ],
+chiffres: [
+{ label: “Deficit 2026-27”, valeur: “-$13.8 B”, note: “Driven by infrastructure, tariff response and services”, variation: “Improves from -$12.3 B in 2025-26”, direction: “down” },
+{ label: “Path to balance”, valeur: “2028-29”, note: “Projected surplus of $0.6 B including reserve”, variation: “Deficit -$6.1 B in 2027-28”, direction: “up” },
+{ label: “Capital plan (10 yr)”, valeur: “$210 B+”, note: “Most ambitious provincial capital plan in Canadian history”, variation: “$37 B in 2026-27 alone”, direction: “up” },
+{ label: “Net debt-to-GDP”, valeur: “~40%”, note: “2026-27 projection — at the government’s target ceiling”, variation: “Fiscal discipline maintained”, direction: “neutral” },
+{ label: “Tariff response (cumulative)”, valeur: “~$30 B”, note: “Relief and support since April 2025”, variation: “Includes $9 B tax deferrals + new measures”, direction: “neutral” },
+{ label: “GDP growth (2025 actual)”, valeur: “1.2%”, note: “Better than the 0.8% forecast in 2025 Budget”, variation: “1.0% projected for 2026”, direction: “up” },
+],
 
-  secteurs: [
-    {
-      id: "tariffs-economy",
-      titre: "Tariff Response & Economic Protection",
-      depenses: "$11 B immediate + $5 B Protecting Ontario Account",
-      variation: "New — central theme of 2025 budget",
-      priorite: "high",
-      resume: "The defining theme of Budget 2025. US tariffs have put Ontario's economy under acute pressure. The government's response is the largest economic protection package in Ontario history. Tax deferrals buy time. The Protecting Ontario Account is the strategic backstop. The real long-term bet is on regulatory reform, critical minerals and diversification away from US dependence.",
-      points: [
-        "$9 B in deferred provincial taxes for 80,000 businesses — liquidity, not forgiveness",
-        "$2 B in WSIB employer rebates ($4 B total over past year) to keep workers employed",
-        "$5 B Protecting Ontario Account — strategic fund for tariff-disrupted businesses",
-        "$1 B in immediate liquidity relief for businesses that have exhausted other funding",
-        "$40 M Trade-Impacted Communities Program for hardest-hit local economies",
-        "Ontario Made Manufacturing Investment Tax Credit enhanced — +$1.3 B over 3 years",
-        "$50 M Ontario Together Trade Fund to help businesses retool and find new markets",
-        "Internal trade barriers eliminated — estimated $200 B annual cost to Canada's economy",
-      ],
-      tags: ["tariffs", "auto", "economy", "manufacturing", "WSIB", "trade"]
-    },
-    {
-      id: "infrastructure-transit",
-      titre: "Infrastructure & Transit",
-      depenses: "$200 B+ over 10 years · Transit $61 B · Highways $30 B",
-      variation: "Largest capital plan in Ontario history",
-      priorite: "high",
-      resume: "The scale is historic — $200 B+ over 10 years. Transit ($61 B) is the largest single sector. Key projects: Ontario Line, Scarborough Subway Extension, Eglinton Crosstown West, Yonge North Extension. Highways: Hwy 413, Bradford Bypass, Hwy 401 tunnel expressway feasibility. The question is always delivery speed vs. announcement volume.",
-      points: [
-        "Transit: $61 B over 10 yr — Ontario Line, Scarborough, Eglinton Crosstown West, Yonge North",
-        "GO 2.0: new passenger train lines through midtown Toronto, Etobicoke, York Region to Bolton",
-        "Highways: nearly $30 B — Hwy 413, Bradford Bypass, Hwy 401 tunnel feasibility",
-        "$758 M for 55 new TTC Line 2 subway trains",
-        "$850 M to refurbish GO Transit rail cars",
-        "Northlander reinstated — Northern Ontario to Toronto rail service",
-        "Highway 11/17 and Highway 17 widening in Northern Ontario",
-        "QEW Garden City Skyway Bridge twinning over Welland Canal",
-      ],
-      tags: ["transit", "highways", "GO", "Ontario-Line", "Hwy-413", "Bradford-Bypass"]
-    },
-    {
-      id: "health",
-      titre: "Health Care",
-      depenses: "$2.1 B primary care · $56 B hospitals (10 yr) · $6.4 B LTC (since 2019)",
-      variation: "Primary care is the signature new investment",
-      priorite: "high",
-      resume: "Primary care is the signature health investment — $2.1 B to connect every Ontarian to a family doctor or primary care team, led by Dr. Jane Philpott. This is structural reform, not just dollars. Hospital infrastructure is massive ($56 B over 10 yr) but spread over a decade. LTC beds are a key commitment with real tracking data.",
-      points: [
-        "$2.1 B to connect every person in Ontario to a family doctor or primary care team",
-        "$300 M for new teaching clinics with Ontario medical schools to train more family doctors",
-        "$56 B in hospital capital over 10 years — 50+ new/upgraded hospitals, ~3,000 beds",
-        "Key hospitals: Grand River/St. Mary's, Brant Community, Southlake, Royal Victoria, Lake of the Woods",
-        "LTC: 58,000 new/upgraded beds by 2028 — 23,977 approved or under construction as of April 2025",
-        "New Ontario Fertility Treatment Tax Credit — up to $20,000 in eligible expenses",
-        "Retirement Home program support extended",
-      ],
-      tags: ["health", "primary-care", "hospitals", "LTC", "fertility", "family-doctor"]
-    },
-    {
-      id: "education",
-      titre: "Education & Child Care",
-      depenses: "$30 B over 10 years capital · $2.5 B Skills Development Fund",
-      variation: "Capital focus — new schools and child care spaces",
-      priorite: "high",
-      resume: "Education investment is dominated by capital — $30 B over 10 years for school construction and child care spaces. The government is continuing $10/day child care delivery. Skills training gets a major boost — $2.5 B total in the Skills Development Fund, reflecting the view of education as economic infrastructure for the tariff era.",
-      points: [
-        "$30 B over 10 years including ~$23 B in capital grants for schools and child care",
-        "New schools: Sudbury, Windsor, Ottawa, Newcastle, Oshawa, Stouffville",
-        "Skills Development Fund: $2.5 B total (+$1 B new) — trades, manufacturing, construction",
-        "$10/day child care delivery continuing under federal agreement",
-        "$10 M First Nation student scholarships for resource development careers",
-        "STEM and trades education emphasized as economic competitiveness strategy",
-        "Postsecondary: $5 B+ over 10 years including $2 B+ in capital grants",
-      ],
-      tags: ["education", "schools", "childcare", "skills", "trades", "postsecondary"]
-    },
-    {
-      id: "critical-minerals",
-      titre: "Critical Minerals & Ring of Fire",
-      depenses: "Multi-billion — within broader economic package",
-      variation: "Permitting reform is the key policy shift",
-      priorite: "high",
-      resume: "Permitting reform is the headline: cut approval timelines from 15+ years to under 5. That regulatory promise is more consequential than any specific dollar amount. The tripled Indigenous equity guarantee ($1 B to $3 B) creates genuine partnership opportunities. Ring of Fire road access is the physical enabler for what could be a generational economic asset.",
-      points: [
-        "Permitting reform: cut approval timelines from 15+ years to under 5 years",
-        "New standalone Ontario Critical Minerals Strategy",
-        "Indigenous equity partnership guarantees: ceiling raised from $1 B to $3 B",
-        "Indigenous Participation Fund expanded by $70 M",
-        "$10 M for First Nation student scholarships in resource development",
-        "Ring of Fire road access infrastructure — enables access to chromite, nickel, copper deposits",
-        "Critical minerals positioned as Ontario's answer to US tariff dependence",
-      ],
-      tags: ["ring-of-fire", "critical-minerals", "mining", "indigenous", "EV", "permitting"]
-    },
-    {
-      id: "housing",
-      titre: "Housing & Homelessness",
-      depenses: "$400 M HEWSF additional · $5 B Building Ontario Fund expansion",
-      variation: "Supply-side and encampment focus",
-      priorite: "high",
-      resume: "Housing policy is about enabling infrastructure (water, sewer systems) rather than direct affordability. The 1.5 M homes by 2031 target is maintained. Homelessness is reframed around addiction recovery hubs — a major policy shift away from harm reduction. New tools for municipalities to address encampments signal a harder line on public spaces.",
-      points: [
-        "$400 M additional to Housing-Enabling Water Systems Fund (total $2 B+ to date)",
-        "$5 B additional to Building Ontario Fund — affordable housing, LTC, energy",
-        "Drug injection sites near schools converted to Homelessness and Addiction Recovery Treatment Hubs",
-        "$75.5 M additional for encampment management and public drug use enforcement",
-        "1.5 million homes by 2031 target maintained",
-        "Zoning and permitting reform to accelerate housing approvals",
-      ],
-      tags: ["housing", "homelessness", "water-systems", "encampments", "addiction", "1.5M-homes"]
-    },
-    {
-      id: "affordability",
-      titre: "Affordability & Cost of Living",
-      depenses: "$1.7 B gas tax savings since 2022 · $200 rebate delivered",
-      variation: "Existing measures made permanent",
-      priorite: "high",
-      resume: "Affordability in Budget 2025 is about locking in existing measures rather than new large programs. Gas tax cuts are permanent. Highway 407 East tolls are gone. One Fare saves commuters $1,600/year. The $200 rebate was already delivered. Tariff-related cost pressures may prompt more affordability measures through the year.",
-      points: [
-        "$200 rebate already delivered to every eligible adult and child in Ontario",
-        "Gas and fuel tax cuts made permanent — $1.7 B saved since 2022",
-        "Highway 407 East tolls eliminated — legislated ban on toll reinstatement on public highways",
-        "One Fare: average $1,600/year saved for daily transit commuters",
-        "Licence plate sticker fees and Hwy 412/418 tolls already eliminated",
-        "Propane tax eliminated for licensed road vehicles",
-        "Internal trade barriers dismantled — reduces costs on goods and services",
-      ],
-      tags: ["affordability", "gas-tax", "tolls", "one-fare", "rebate", "cost-of-living"]
-    },
-    {
-      id: "justice-safety",
-      titre: "Public Safety & Justice",
-      depenses: "Within broader community safety envelope",
-      variation: "Operation Deterrence launched — border and crime focus",
-      priorite: "medium",
-      resume: "Public safety is a signature Ford government priority. Operation Deterrence (launched January 2025) targets border security and illegal crossings. Major investment in police training, gun/gang violence response and corrections capacity. The conversion of drug consumption sites is as much a public safety decision as a health one.",
-      points: [
-        "Operation Deterrence: border security, illegal drugs and gun interdiction framework",
-        "Expanded Joint Air Support Unit for crime-fighting",
-        "Gun and gang violence: new specialized unit funding",
-        "More repeat violent offenders incarcerated — bail reform push at federal level",
-        "Training more police officers province-wide",
-        "First Nation policing services funded",
-        "New provincial jail capacity",
-        "Human trafficking survivor support programs",
-      ],
-      tags: ["justice", "police", "border", "guns-gangs", "corrections", "trafficking"]
-    },
-  ],
+secteurs: [
+{
+id: “tariffs-economy”,
+titre: “Tariff Response & Economic Competitiveness”,
+depenses: “~$30 B cumulative since Apr 2025 · $4 B Protect Ontario Account Investment Fund”,
+variation: “Continuity from 2025 — new Investment Fund added”,
+priorite: “high”,
+resume: “Budget 2026 doubles down on the tariff response framework established last year. The new Protect Ontario Account Investment Fund ($4 B) shifts from defensive support to offensive investment — AI, defence, advanced manufacturing, life sciences and critical minerals. This is the budget that says Ontario is done playing defence and is now building for the next economy.”,
+points: [
+“$4 B Protect Ontario Account Investment Fund — AI, defence, advanced manufacturing, life sciences, critical minerals R&D”,
+“Fund designed to crowd in pension fund and private capital for long-term strategic priorities”,
+“Protect Ontario Financing Program continued — working capital for tariff-impacted SMEs”,
+“POWER Centres helped nearly 15,000 workers with transition assistance in 2025”,
+“$100 M additional to Ontario Together Trade Fund (OTTF) — new interprovincial and export markets”,
+“Small business corporate income tax rate cut by more than 30% — up to $5,000 annual relief”,
+“Accelerated depreciation for capital equipment — $3.5 B in Ontario income tax relief over 4 years”,
+“One Project, One Process framework: Frontier Lithium, Canada Nickel Crawford, Kinross Great Bear fast-tracked”,
+“Ring of Fire roads accelerated — construction starts June 2026, roads open November 2030 (5 years early)”,
+],
+tags: [“tariffs”, “economy”, “investment”, “AI”, “defence”, “critical-minerals”, “ring-of-fire”]
+},
+{
+id: “tax-competitiveness”,
+titre: “Tax Action Plan & Competitiveness”,
+depenses: “$3.5 B depreciation relief (4 yr) · Small business tax cut >30%”,
+variation: “New multi-year Tax Action Plan introduced”,
+priorite: “high”,
+resume: “The multi-year Tax Action Plan is Budget 2026’s signature economic policy. Cutting the small business corporate income tax rate by more than 30% is a real signal — not a one-time credit but a structural rate change. The accelerated capital depreciation aligns Ontario with federal measures and directly addresses the productivity gap. The goal: most competitive jurisdiction in the G7.”,
+points: [
+“Small business corporate income tax rate cut by more than 30% — up to $5,000 annual relief per business”,
+“Accelerated income tax deduction for capital equipment — $3.5 B in relief over 4 years”,
+“Builds on $10 B in cumulative cost savings and supports for businesses since 2018”,
+“Prototype to full ‘As of Right’ labour mobility rules — first in Canada”,
+“Ontario first province to remove all Party-Specific Exemptions under Canadian Free Trade Agreement”,
+“Red tape reduction and permitting streamlining for job-creating investments”,
+“Historic labour mobility regulation in force since January 2026 — breaks down interprovincial barriers”,
+],
+tags: [“tax”, “competitiveness”, “small-business”, “depreciation”, “trade”, “labour-mobility”]
+},
+{
+id: “infrastructure-transit”,
+titre: “Infrastructure & Transit”,
+depenses: “$210 B+ over 10 years · Highways $31 B · $37 B in 2026-27”,
+variation: “Capital plan grows to $210 B — shovels in ground on major projects”,
+priorite: “high”,
+resume: “Construction has started on Highway 413 and Bradford Bypass. Two new transit lines opened in Toronto. The Ontario Line excavation at Queen Station is underway. The Ring of Fire roads have been accelerated by 5 years. This is a budget that can point to actual construction, not just announcements — a meaningful shift from the planning phase.”,
+points: [
+“Highway 413 construction started — saves drivers up to 30 min each way, serves GGH growth”,
+“Bradford Bypass construction started — saves drivers 35 min, connects Hwy 400 to Hwy 404”,
+“Hwy 401 tunnel expressway feasibility — fieldwork starting spring 2026”,
+“Ring of Fire all-season roads: construction June 2026, roads open November 2030 (5 years early)”,
+“Ontario Line: excavation underway at Queen Station”,
+“Scarborough Subway Extension: breaking ground on first of three stations”,
+“Yonge North Subway Extension: shovels in ground steps being taken”,
+“GO Transit: Kitchener weekend service first-ever, more frequent Niagara service, Woodbine Station construction”,
+“QEW Garden City Skyway Bridge twinning, new Hwy 7 expansion Kitchener-Guelph”,
+“Two new transit lines already opened in Toronto”,
+],
+tags: [“transit”, “highways”, “Hwy-413”, “Bradford-Bypass”, “Ontario-Line”, “Scarborough”, “GO”, “ring-of-fire”]
+},
+{
+id: “health”,
+titre: “Health Care”,
+depenses: “$64 B plan · $50 B hospital capital · $3.4 B Primary Care Action Plan (4 yr)”,
+variation: “4th consecutive year of historic hospital investment”,
+priorite: “high”,
+resume: “For the fourth consecutive year, Ontario is making a historic investment in hospitals — over $1.1 B in additional funding. The $3.4 B Primary Care Action Plan continues. New medical schools are being built and expanded. LTC homes get $139.4 M additional. The scale is real but the delivery system — staffing, wait times — remains under pressure.”,
+points: [
+“Over $1.1 B in additional hospital funding in 2026-27 — 4th consecutive year of record investment”,
+“$50 B in capital grants for hospitals and health infrastructure (within $64 B plan)”,
+“$3.4 B Primary Care Action Plan over 4 years — new doctors and primary care providers”,
+“Building and expanding medical schools to train new doctors”,
+“$139.4 M additional for long-term care homes in 2026-27”,
+“$965 M including $186 M new funding for Ontario Autism Program in 2026-27”,
+“Darlington Unit 4 nuclear refurbishment completed — ahead of schedule, $150 M under budget”,
+],
+tags: [“health”, “hospitals”, “primary-care”, “LTC”, “autism”, “medical-schools”]
+},
+{
+id: “education”,
+titre: “Education & Postsecondary”,
+depenses: “$6.4 B new postsecondary funding · $66 M Classroom Supplies Fund”,
+variation: “Transformative postsecondary announcement — $6.4 B new funding”,
+priorite: “high”,
+resume: “The $6.4 B in new postsecondary funding is the headline education announcement — a direct response to the financial crisis facing Ontario’s colleges and universities. The Classroom Supplies Fund ($750 per elementary homeroom teacher) is smaller but tangible. The government’s emphasis is on producing competitive graduates for the G7 economy, not just funding institutions.”,
+points: [
+“$6.4 B in new funding for postsecondary sector — colleges, universities and Indigenous Institutes”,
+“Ensures sustainability of institutions and prepares graduates for competitive careers”,
+“$66 M Classroom Supplies Fund — $750 per elementary homeroom teacher per year”,
+“$20 M Liam Riazati Memorial Fund — concrete barriers for child care centres”,
+“Continued investment in building more schools and child care spaces within the $210 B capital plan”,
+“Student achievement framed as the top priority in Ontario’s education system”,
+],
+tags: [“education”, “postsecondary”, “colleges”, “universities”, “childcare”, “classroom”]
+},
+{
+id: “housing-affordability”,
+titre: “Housing & Affordability”,
+depenses: “HST rebate on new homes up to $1 M (full 8% removed) · extended to $1.5 M”,
+variation: “Major new HST rebate — removes full provincial portion on new homes”,
+priorite: “high”,
+resume: “The removal of the full 8% provincial HST on new homes up to $1 M (maintained to $1.5 M) is the most significant housing affordability measure in this budget. The government projects it could stimulate thousands of housing starts, support 14,000 construction jobs and add 0.2 percentage points to GDP growth. The question is federal matching — Ontario is pressing Ottawa to match.”,
+points: [
+“Full 8% provincial HST removed on new homes up to $1 M — up to $80,000 in relief”,
+“Relief maintained for homes up to $1.5 M”,
+“Could stimulate thousands of housing starts and support 14,000 construction jobs”,
+“Eligible for buyers who purchased on or after March 20, 2025 — retroactive”,
+“Ontario pressing federal government to match the HST rebate”,
+“Gas/fuel tax cuts permanent — $2.1 B saved since July 2022”,
+“407 East tolls permanently removed — saves commuters estimated $7,200 annually”,
+“One Fare extended 2 more years — saves daily users up to $1,600/year, $233 M saved since 2024”,
+“Ontario Electricity Rebate — reduces typical residential bill by ~$36/month”,
+],
+tags: [“housing”, “HST”, “new-homes”, “affordability”, “gas-tax”, “tolls”, “one-fare”, “electricity”]
+},
+{
+id: “energy-nuclear”,
+titre: “Energy & Nuclear”,
+depenses: “$800 B+ contribution to Canada’s economy (nuclear plan lifespan)”,
+variation: “Nuclear expansion accelerating — Wesleyville agreement signed”,
+priorite: “high”,
+resume: “Ontario’s nuclear bet is getting bigger. Darlington Unit 4 refurbishment complete, ahead of schedule and under budget. Ontario Power Generation signed the Wesleyville agreement — 10,500 jobs, $235 B to Ontario GDP over its lifespan. Four SMRs at Darlington are being built (first in G7). The government frames nuclear as Ontario’s strategic economic advantage globally, not just a power source.”,
+points: [
+“Darlington Unit 4 refurbishment complete — ahead of schedule, $150 M under budget”,
+“Ontario Power Generation signed Wesleyville nuclear project agreement — 10,500 jobs, $235 B GDP impact”,
+“Four SMRs at Darlington — first in G7, enough electricity for 1.2 M homes when complete”,
+“Nuclear expansion plan expected to create 150,000 job opportunities”,
+“Add over $800 B to Canada’s economy over nuclear plan lifespan”,
+“Ontario positioning nuclear advantage for global export opportunities”,
+“Record investments in energy infrastructure to power economic growth”,
+],
+tags: [“nuclear”, “energy”, “SMR”, “Darlington”, “Wesleyville”, “jobs”, “clean-energy”]
+},
+{
+id: “justice-safety”,
+titre: “Public Safety & Justice”,
+depenses: “$32.5 M Operation Deterrence 2.0 (2026-27)”,
+variation: “Operation Deterrence 2.0 — enhanced border security”,
+priorite: “medium”,
+resume: “Operation Deterrence launched in January 2025 has delivered concrete results: 550+ illegal firearms traced, 4,152 kg cocaine seized, 192 kg fentanyl seized, 641 charges laid. Operation Deterrence 2.0 expands this with $32.5 M in two new border security grant programs. New bail legislation targets violent and repeat offenders.”,
+points: [
+“Operation Deterrence results: 550+ illegal firearms traced, 4,152 kg cocaine, 192 kg fentanyl, 641 charges”,
+“$32.5 M in 2026-27 for two new border security grant programs — Operation Deterrence 2.0”,
+“New legislation to strengthen Ontario’s bail system for violent and repeat offenders”,
+“Expanding specialized bail prosecution teams”,
+“Exploring making part of Ontario Sex Offender and Trafficker Registry publicly available”,
+“Historic investments in correctional capacity for high-risk offenders”,
+],
+tags: [“safety”, “border”, “bail”, “firearms”, “corrections”, “Operation-Deterrence”]
+},
+],
 
-  audiences: [
-    {
-      id: "workers",
-      titre: "Workers & Job Seekers",
-      priorite: "high",
-      resume: "Budget 2025 is fundamentally a workers' budget — the tariff threat to Ontario's manufacturing jobs is the organizing logic of almost every major measure. Skills retraining gets $2.5 B total in the Skills Development Fund. Laid-off workers get new training and support centres.",
-      mesures: [
-        { label: "WSIB employer rebates (keep workers employed)", valeur: "$2 B", note: "$4 B total over past year" },
-        { label: "Skills Development Fund (total)", valeur: "$2.5 B", note: "+$1 B new investment" },
-        { label: "Training centres for laid-off workers", valeur: "$20 M", note: "New support centres" },
-        { label: "Trade-Impacted Communities support", valeur: "$40 M", note: "For hardest-hit local economies" },
-      ],
-      tags: ["workers", "manufacturing", "tariffs", "skills", "retraining"]
-    },
-    {
-      id: "families",
-      titre: "Families",
-      priorite: "high",
-      resume: "Families benefit from the $200 rebate (already paid), permanent gas tax cuts, toll elimination and transit savings. Child care continues under the federal $10/day agreement. The fertility tax credit is a new targeted measure for families facing fertility challenges.",
-      mesures: [
-        { label: "$200 rebate per eligible adult & child", valeur: "Delivered", note: "Already paid out in early 2025" },
-        { label: "Gas tax savings (since 2022)", valeur: "$1.7 B", note: "Now permanent" },
-        { label: "One Fare transit savings (annual)", valeur: "$1,600", note: "Average daily commuter" },
-        { label: "Ontario Fertility Treatment Tax Credit", valeur: "New", note: "Up to $20,000 in eligible expenses" },
-      ],
-      tags: ["families", "affordability", "childcare", "transit", "fertility"]
-    },
-    {
-      id: "seniors",
-      titre: "Seniors",
-      priorite: "high",
-      resume: "Long-term care is the defining seniors issue — 58,000 new/upgraded beds by 2028, with 23,977 already approved or under construction. Primary care access ($2.1 B) benefits seniors disproportionately. Retirement Home support is extended.",
-      mesures: [
-        { label: "LTC beds target by 2028", valeur: "58,000", note: "$6.4 B invested since 2019" },
-        { label: "LTC beds approved/under construction", valeur: "23,977", note: "As of April 2025" },
-        { label: "Primary care connection", valeur: "$2.1 B", note: "Connect every Ontarian to a doctor" },
-        { label: "Retirement Home program", valeur: "Extended", note: "Support for residents" },
-      ],
-      tags: ["seniors", "LTC", "primary-care", "retirement-homes"]
-    },
-    {
-      id: "businesses",
-      titre: "Businesses & Employers",
-      priorite: "high",
-      resume: "The most business-friendly Ontario budget in years. Tax deferrals, WSIB rebates, manufacturing tax credit enhancement and the $5 B Protecting Ontario Account are all targeted at keeping Ontario businesses viable through tariff disruption.",
-      mesures: [
-        { label: "Tax deferrals for 80,000 businesses", valeur: "$9 B", note: "Liquidity support — not forgiveness" },
-        { label: "Protecting Ontario Account", valeur: "$5 B", note: "Strategic fund for tariff response" },
-        { label: "Ontario Made MFG Tax Credit (additional)", valeur: "$1.3 B / 3 yr", note: "Enhanced and expanded" },
-        { label: "Ontario Together Trade Fund", valeur: "$50 M", note: "Retool for new markets" },
-      ],
-      tags: ["business", "tariffs", "tax-credit", "manufacturing", "trade"]
-    },
-    {
-      id: "commuters",
-      titre: "Commuters & Transit Users",
-      priorite: "high",
-      resume: "Big wins for commuters: One Fare ($1,600/year savings) and 407 East toll removal. The $61 B transit capital plan over 10 years is transformative in scope. Gridlock costs Ontario $56 B/year — the justification for both transit and highway investments.",
-      mesures: [
-        { label: "One Fare savings (avg daily commuter)", valeur: "$1,600/yr", note: "Participating transit systems" },
-        { label: "407 East tolls eliminated", valeur: "Permanent", note: "Legislated — no government can reinstate" },
-        { label: "Transit capital over 10 years", valeur: "$61 B", note: "Ontario Line, Eglinton, Yonge North" },
-        { label: "GO 2.0 feasibility", valeur: "Advancing", note: "New lines including midtown Toronto" },
-      ],
-      tags: ["commuters", "transit", "tolls", "GO", "one-fare"]
-    },
-    {
-      id: "indigenous",
-      titre: "Indigenous Communities",
-      priorite: "high",
-      resume: "A significant budget for Indigenous economic participation. The equity participation guarantee is tripled ($1 B to $3 B). Ring of Fire road infrastructure and critical minerals create real economic opportunity. First Nation policing and student scholarships also funded.",
-      mesures: [
-        { label: "Indigenous equity guarantee ceiling", valeur: "$3 B", note: "Tripled from $1 B — energy projects" },
-        { label: "Indigenous Participation Fund", valeur: "+$70 M", note: "Expanded program" },
-        { label: "First Nation student scholarships", valeur: "$10 M", note: "Resource development careers" },
-        { label: "First Nation policing services", valeur: "Funded", note: "New investment" },
-      ],
-      tags: ["indigenous", "ring-of-fire", "equity", "policing", "scholarships"]
-    },
-  ],
+audiences: [
+{
+id: “homebuyers”,
+titre: “Home Buyers”,
+priorite: “high”,
+resume: “The biggest direct benefit in Budget 2026 for most Ontarians. The removal of the full 8% provincial HST on new homes up to $1 M means up to $80,000 in relief. Retroactive to March 20, 2025 — if you bought recently, you may qualify. The government is pressing Ottawa to match.”,
+mesures: [
+{ label: “Provincial HST removed on new homes (up to $1 M)”, valeur: “Up to $80,000”, note: “Maintained for homes up to $1.5 M” },
+{ label: “Retroactive to”, valeur: “Mar 20, 2025”, note: “Earlier purchases may qualify” },
+{ label: “407 East toll savings (annual)”, valeur: “$7,200”, note: “Permanently removed” },
+],
+tags: [“housing”, “HST”, “new-homes”, “first-time-buyers”]
+},
+{
+id: “families”,
+titre: “Families”,
+priorite: “high”,
+resume: “Families benefit from permanent gas tax savings ($2.1 B since 2022), the extended One Fare program, stable electricity bills via the OER, and the HST rebate on new homes. The autism program gets $965 M. Child care centres get $20 M in safety upgrades.”,
+mesures: [
+{ label: “Gas/fuel tax savings (since 2022)”, valeur: “$2.1 B”, note: “Permanent — ongoing savings” },
+{ label: “One Fare (extended 2 yr)”, valeur: “$1,600/yr”, note: “Daily GTA transit users — $233 M saved since 2024” },
+{ label: “Ontario Electricity Rebate”, valeur: “~$36/mo”, note: “Typical residential reduction” },
+{ label: “Ontario Autism Program”, valeur: “$965 M”, note: “$186 M new in 2026-27” },
+],
+tags: [“families”, “gas-tax”, “one-fare”, “electricity”, “autism”, “child-care”]
+},
+{
+id: “businesses”,
+titre: “Businesses & Employers”,
+priorite: “high”,
+resume: “The multi-year Tax Action Plan is the defining business measure — small business tax cut over 30%, accelerated capital depreciation ($3.5 B relief over 4 years). The $4 B Protect Ontario Account Investment Fund opens new investment opportunities. Combined with $10 B in cumulative cost savings since 2018, Ontario is positioning itself as the most competitive G7 jurisdiction.”,
+mesures: [
+{ label: “Small business corporate tax rate cut”, valeur: “>30%”, note: “Up to $5,000 annual relief per business” },
+{ label: “Accelerated capital depreciation”, valeur: “$3.5 B (4 yr)”, note: “Ontario income tax relief for qualifying businesses” },
+{ label: “Protect Ontario Account Investment Fund”, valeur: “$4 B”, note: “AI, defence, advanced manufacturing, life sciences” },
+{ label: “Cumulative business cost savings since 2018”, valeur: “~$10 B”, note: “Annual run rate” },
+],
+tags: [“business”, “tax”, “investment”, “competitiveness”, “SME”]
+},
+{
+id: “workers”,
+titre: “Workers & Job Seekers”,
+priorite: “high”,
+resume: “POWER Centres helped nearly 15,000 workers in 2025. The Ring of Fire acceleration and nuclear expansion will create tens of thousands of jobs. The ‘As of Right’ labour mobility rules let qualified workers practice their trade across Canada without re-certification. The $6.4 B postsecondary investment prepares the next generation workforce.”,
+mesures: [
+{ label: “POWER Centres (tariff-impacted workers)”, valeur: “15,000 helped”, note: “Transition assistance and employment referrals” },
+{ label: “Nuclear expansion jobs”, valeur: “150,000+”, note: “New job opportunities over plan lifespan” },
+{ label: “Ring of Fire jobs”, valeur: “Thousands”, note: “Construction starting June 2026” },
+{ label: “Labour mobility (‘As of Right’)”, valeur: “First in Canada”, note: “Work across provinces without re-certification” },
+],
+tags: [“workers”, “jobs”, “nuclear”, “ring-of-fire”, “labour-mobility”, “postsecondary”]
+},
+{
+id: “seniors”,
+titre: “Seniors”,
+priorite: “high”,
+resume: “LTC homes get $139.4 M additional in 2026-27 — the fourth consecutive year of record health investment. The primary care expansion ($3.4 B over 4 years) benefits seniors disproportionately. Electricity and gas cost relief also directly helps seniors on fixed incomes.”,
+mesures: [
+{ label: “Additional LTC home funding”, valeur: “$139.4 M”, note: “2026-27 — ongoing record investment” },
+{ label: “Primary Care Action Plan”, valeur: “$3.4 B (4 yr)”, note: “More doctors, expanded access” },
+{ label: “Electricity Rebate (OER)”, valeur: “~$36/mo”, note: “Stable, predictable bills” },
+{ label: “Gas tax savings”, valeur: “Permanent”, note: “$2.1 B saved by Ontarians since 2022” },
+],
+tags: [“seniors”, “LTC”, “primary-care”, “electricity”, “health”]
+},
+{
+id: “indigenous”,
+titre: “Indigenous Communities”,
+priorite: “high”,
+resume: “The Ring of Fire acceleration is the biggest Indigenous economic development story in this budget — roads opening November 2030, supported by agreements with three First Nations and a federal co-operation agreement. Ontario calls on Ottawa to match the $1 B provincial commitment. The $6.4 B postsecondary funding includes Indigenous Institutes.”,
+mesures: [
+{ label: “Ring of Fire roads — construction start”, valeur: “June 2026”, note: “5 years early — agreements with 3 First Nations” },
+{ label: “Ring of Fire roads — opening”, valeur: “Nov 2030”, note: “Federal co-operation agreement signed” },
+{ label: “Ontario’s Ring of Fire commitment”, valeur: “$1 B”, note: “Calling on federal government to match” },
+{ label: “Indigenous Institutes funding”, valeur: “Included in $6.4 B”, note: “Postsecondary sustainability package” },
+],
+tags: [“indigenous”, “ring-of-fire”, “first-nations”, “postsecondary”, “infrastructure”]
+},
+],
 
-  parties_prenantes: [
-    {
-      id: "auto-sector",
-      titre: "Auto Sector & Manufacturing",
-      priorite: "high",
-      resume: "Budget 2025 is a direct response to the existential threat US tariffs pose to Ontario's auto sector. The $9 B in tax deferrals and the $5 B Protecting Ontario Account are real, immediate tools. The government's reaffirmation of its $46 B EV/battery investment commitment sends a critical signal to automakers planning their next cycle.",
-      enjeux: [
-        "Tax deferrals ($9 B): cashflow relief now, but plan for when deferrals expire",
-        "Protecting Ontario Account ($5 B): assess eligibility criteria for your sector",
-        "EV/battery investment protection: government reaffirmed the $46 B (CAMI, Stellantis, Ford, GM)",
-        "Ontario Made Manufacturing Investment Tax Credit: major opportunity for eligible capital investments",
-        "Supply chain retooling: Ontario Together Trade Fund ($50 M) for market diversification",
-        "Skills Development Fund ($2.5 B): relevant retraining programs for manufacturing workforce",
-      ],
-      tags: ["auto", "tariffs", "EV", "tax-credit", "supply-chain", "skills"]
-    },
-    {
-      id: "hospitals",
-      titre: "Hospitals & Health Organizations",
-      priorite: "high",
-      resume: "The $56 B hospital capital plan is the largest number in health — but spread over 10 years. Primary care reform ($2.1 B) will reshape patient flow. Key question for hospital administrators: operating budget adequacy alongside capital commitments. Capital plans mean nothing if you can't staff the new beds.",
-      enjeux: [
-        "Capital grants vs. operating: confirm your project has both capital approval AND operating commitment",
-        "50+ major hospital projects — not all will move at the same pace",
-        "Primary care reform: more patients connected to family doctors changes ED and specialist patterns",
-        "Staffing: teaching clinic investment ($300 M) takes years — short-term shortage remains",
-        "LTC integration: 58,000 beds succeed only with funded hospital-to-LTC pathways",
-        "Mental health: operating implications of new Homelessness and Addiction Recovery Hubs",
-      ],
-      tags: ["hospitals", "capital", "primary-care", "LTC", "staffing"]
-    },
-    {
-      id: "municipalities",
-      titre: "Municipalities & AMO",
-      priorite: "high",
-      resume: "Municipalities get useful tools — HEWSF funding, encampment enforcement powers and co-investment opportunities. But the fundamental provincial-municipal fiscal gap remains unaddressed. The housing enabling legislation carries both new tools and new obligations.",
-      enjeux: [
-        "HEWSF additional $400 M: prioritize water/sewer projects that unlock housing approvals",
-        "Encampment enforcement ($75.5 M): new tools but surge demand for shelter capacity",
-        "Building Ontario Fund ($5 B expanded): LTC and affordable housing co-investment opportunities",
-        "1.5 M homes target: provincial consequences for municipalities not meeting housing commitments",
-        "Transit: GO 2.0 advancement creates regional connectivity investment opportunities",
-        "Operating funding gap: still unresolved — advocacy focus for 2026 budget cycle",
-      ],
-      tags: ["municipalities", "housing", "water", "encampments", "transit", "fiscal-gap"]
-    },
-    {
-      id: "construction",
-      titre: "Construction & Real Estate Industry",
-      priorite: "high",
-      resume: "$200 B+ in capital over 10 years is generational work. Industry challenges: labour availability, materials costs, permitting speed. The Skills Development Fund ($2.5 B) directly targets trades training. Regulatory reform to accelerate permitting timelines is the structural enabler.",
-      enjeux: [
-        "$200 B capital pipeline: position now for hospital, transit, school and highway contracts",
-        "Skills Development Fund ($2.5 B): trades training programs for construction workforce",
-        "Permitting reform: Ring of Fire precedent — press for broader construction permit acceleration",
-        "1.5 M homes: requires industry capacity — advocate for skilled trades immigration streams",
-        "Ontario Made Manufacturing Investment Tax Credit: applicable to construction equipment",
-        "Building Ontario Fund expansion: affordable housing and LTC co-investment opportunities",
-      ],
-      tags: ["construction", "capital", "trades", "permitting", "housing", "skills"]
-    },
-    {
-      id: "education-sector",
-      titre: "School Boards & Education Sector",
-      priorite: "high",
-      resume: "The $30 B in education capital addresses significant aging school infrastructure backlog. Child care expansion under the federal agreement is a key operational commitment. Skills Development Fund signals government's view of education as economic infrastructure.",
-      enjeux: [
-        "Capital grants ($23 B over 10 yr): advocate early for your board's priority projects",
-        "$10/day child care: educator recruitment and retention remain implementation challenges",
-        "Skills Development Fund ($2.5 B): secondary school and college trades programs are priority",
-        "Growing boards: 905-area demographic pressure creates competing capital demands",
-        "Declining enrolment boards: consolidation vs. rural school maintenance tension",
-        "STEM investment: curriculum and facility alignment needed",
-      ],
-      tags: ["education", "schools", "childcare", "capital", "trades", "demographics"]
-    },
-    {
-      id: "community-services",
-      titre: "Community & Social Services",
-      priorite: "high",
-      resume: "The conversion of drug injection sites to Homelessness and Addiction Recovery Treatment Hubs is the defining policy shift. The $75.5 M for encampment management creates pressure on shelter and supportive housing capacity. ODSP and OW rates were not significantly increased — a major unaddressed need.",
-      enjeux: [
-        "Addiction Recovery Treatment Hubs: understand conversion timelines and service model expectations",
-        "Encampment response: $75.5 M creates surge demand for shelter, housing and wraparound services",
-        "ODSP and OW: no significant rate increase — advocacy opportunity for 2026 budget",
-        "Food security: not specifically addressed in budget — pressure on food banks continues",
-        "Domestic violence shelters: monitor supplementary materials for funding details",
-        "Core funding stability: multi-year agreements vs. annual uncertainty",
-      ],
-      tags: ["community", "homelessness", "addiction", "ODSP", "shelter", "food-security"]
-    },
-    {
-      id: "critical-minerals-org",
-      titre: "Mining & Critical Minerals Organizations",
-      priorite: "high",
-      resume: "Potentially the most consequential budget for Ontario's mining sector in decades. Permitting reform (15+ years to under 5), tripled Indigenous equity guarantees, and a new Critical Minerals Strategy create genuine development opportunity. Ring of Fire road access is the physical enabler.",
-      enjeux: [
-        "Permitting reform: track legislative/regulatory changes implementing the 15→5 year timeline commitment",
-        "Ring of Fire road access: confirm project scope, timelines and construction start commitments",
-        "Indigenous equity guarantee ($3 B ceiling): structure partnerships early — this is the enabling tool",
-        "New Critical Minerals Strategy: participate in consultation — early engagement shapes programs",
-        "Indigenous Participation Fund ($70 M expanded): co-investment opportunities for First Nations",
-        "EV supply chain link: position Ontario critical minerals in EV/battery value chain narrative",
-      ],
-      tags: ["mining", "ring-of-fire", "permitting", "indigenous", "EV", "critical-minerals"]
-    },
-  ],
+parties_prenantes: [
+{
+id: “auto-manufacturing”,
+titre: “Auto Sector & Manufacturing”,
+priorite: “high”,
+resume: “The $4 B Protect Ontario Account Investment Fund is the new tool — it specifically targets advanced manufacturing alongside AI, defence and life sciences. The accelerated capital depreciation ($3.5 B over 4 years) directly rewards capital investment in manufacturing. The small business tax cut and labour mobility rules address structural competitiveness.”,
+enjeux: [
+“Protect Ontario Account Investment Fund ($4 B): advanced manufacturing is explicitly named — engage early on eligibility”,
+“Accelerated depreciation ($3.5 B/4 yr): model the impact on your capital investment decisions now”,
+“Small business tax rate cut (>30%): significant for SME suppliers in the auto supply chain”,
+“Labour mobility (‘As of Right’): hiring qualified workers from other provinces now much faster”,
+“OTTF ($100 M additional): if you are diversifying away from US markets, apply now”,
+“One Project, One Process: if you have a major project pending approvals, engage with the framework”,
+],
+tags: [“manufacturing”, “auto”, “tax”, “capital”, “labour-mobility”, “investment”]
+},
+{
+id: “hospitals”,
+titre: “Hospitals & Health Organizations”,
+priorite: “high”,
+resume: “Over $1.1 B in additional hospital funding for the 4th consecutive year. The $50 B capital grants program for hospital infrastructure continues. Primary care expansion ($3.4 B) will change patient flow patterns. The $139.4 M additional for LTC is welcome but the staffing gap remains the binding constraint on delivery.”,
+enjeux: [
+“Additional hospital funding ($1.1 B+): confirm your share and what operating commitments accompany it”,
+“Primary Care Action Plan ($3.4 B/4 yr): more patients connected to family doctors means different ED patterns”,
+“Medical school expansion: long-term physician supply — plan for the 5-10 year pipeline”,
+“LTC additional funding ($139.4 M): staffing remains the key constraint, not capital”,
+“Capital grants ($50 B): confirm where your project sits in the priority queue”,
+“Nuclear Wesleyville: 10,500 jobs — watch for health services infrastructure requirements in the Port Hope area”,
+],
+tags: [“hospitals”, “capital”, “primary-care”, “LTC”, “staffing”]
+},
+{
+id: “construction”,
+titre: “Construction & Real Estate Industry”,
+priorite: “high”,
+resume: “$37 B in 2026-27 alone. Construction is now actually underway on 413, Bradford Bypass, Ontario Line and Scarborough Subway. The HST rebate on new homes could stimulate thousands of housing starts and 14,000 construction jobs. The Ring of Fire roads start in June 2026. The pipeline is real and large.”,
+enjeux: [
+“Ring of Fire roads (starting June 2026): specialized northern construction — position now”,
+“HST rebate on new homes: 14,000 construction jobs projected — residential sector surge expected”,
+“Hwy 413 and Bradford Bypass: active construction — sub-trade and materials opportunities”,
+“Ontario Line and subway extensions: active excavation and construction — ongoing procurement”,
+“Darlington SMRs and Wesleyville nuclear: specialized nuclear construction pipeline”,
+“Accelerated depreciation: apply to your own equipment purchases for tax relief”,
+],
+tags: [“construction”, “housing”, “transit”, “highways”, “nuclear”, “ring-of-fire”]
+},
+{
+id: “municipalities”,
+titre: “Municipalities & AMO”,
+priorite: “high”,
+resume: “The HST rebate on new homes stimulates supply — municipalities benefit from more housing completions. Ring of Fire road access creates new economic zones in Northern Ontario. The One Fare extension keeps transit ridership numbers strong. But the fundamental provincial-municipal fiscal gap on operating budgets remains unaddressed.”,
+enjeux: [
+“HST rebate on new homes: development charge implications — model your revenue forecasts”,
+“Ring of Fire acceleration: northern First Nations communities economic development opportunity”,
+“Transit capital: GO extensions and subway milestones — confirm operating cost implications”,
+“Operation Deterrence 2.0 ($32.5 M): border community municipalities benefit directly”,
+“Postsecondary ($6.4 B): university/college cities — workforce and economic development signal”,
+“Operating funding gap: still unresolved — priority advocacy for 2027 budget”,
+],
+tags: [“municipalities”, “housing”, “transit”, “northern-ontario”, “operating-funding”]
+},
+{
+id: “postsecondary”,
+titre: “Colleges, Universities & Indigenous Institutes”,
+priorite: “high”,
+resume: “The $6.4 B in new postsecondary funding is transformative — it directly addresses the financial crisis that has seen program cuts, layoffs and near-insolvencies at several institutions. The framing is economic — producing competitive graduates for the G7 economy. The details of allocation across institutions will determine who benefits most.”,
+enjeux: [
+“$6.4 B new funding: confirm allocation formula — how much goes to your institution?”,
+“Sustainability focus: is this operating or capital? Multi-year or one-time? Details critical”,
+“Indigenous Institutes explicitly included: confirm dedicated envelope vs. general allocation”,
+“G7 competitiveness framing: expect strings attached around program mix and graduate outcomes”,
+“Postsecondary + Ring of Fire link: resource development programs aligned with Ring of Fire opportunity”,
+“Labour mobility (‘As of Right’): credential recognition changes will affect your programs”,
+],
+tags: [“postsecondary”, “colleges”, “universities”, “indigenous-institutes”, “sustainability”]
+},
+{
+id: “energy-nuclear-industry”,
+titre: “Energy Sector & Nuclear Industry”,
+priorite: “high”,
+resume: “Wesleyville is the headline — a new nuclear project agreement signed, 10,500 jobs, $235 B GDP impact. Darlington Unit 4 refurbishment is complete, ahead of schedule and under budget — a strong proof of concept. Four SMRs at Darlington are first in G7. Ontario is actively pursuing global export of its nuclear expertise.”,
+enjeux: [
+“Wesleyville nuclear project: 10,500 jobs — supply chain opportunities across Ontario and Canada”,
+“Four SMRs at Darlington: first in G7 — global proof of concept with export implications”,
+“Nuclear export strategy: global opportunity — engage with Ontario’s international positioning”,
+“Darlington refurbishment ($150 M under budget): strong cost management record for investors”,
+“Ring of Fire energy corridor: energy infrastructure required for road and mining development”,
+“Electricity Rebate (OER): government committed to stable, predictable electricity costs — pricing signal”,
+],
+tags: [“nuclear”, “energy”, “SMR”, “Wesleyville”, “Darlington”, “export”]
+},
+{
+id: “tech-ai-defence”,
+titre: “Technology, AI & Defence Industry”,
+priorite: “high”,
+resume: “The Protect Ontario Account Investment Fund ($4 B) explicitly targets AI, defence and advanced manufacturing — and is designed to crowd in pension and private capital. Ontario is actively bidding to host the federal Defence, Security and Resilience Bank in Toronto. The global defence spending surge creates a generational opportunity for Ontario’s aerospace and tech clusters.”,
+enjeux: [
+“Protect Ontario Account Investment Fund ($4 B): AI and defence explicitly included — engage early on eligibility”,
+“Defence, Security and Resilience Bank: Toronto bid — 3,500 direct + thousands indirect jobs if successful”,
+“Federal defence spending surge: Ontario positioned as key supplier — align product/service roadmap”,
+“One Project, One Process framework: if your project involves AI infrastructure or defence tech facilities, engage”,
+“Postsecondary $6.4 B: talent pipeline for AI and defence companies — engage with institutions now”,
+“Nuclear/SMR tech: global export opportunity — dual-use technology applications”,
+],
+tags: [“AI”, “defence”, “tech”, “investment-fund”, “DSRB”, “nuclear”]
+},
+],
 
-  glossaire: [
-    { terme: "Deficit", def: "The gap between Ontario's total revenue and total expenditures. The 2025-26 deficit is projected at $14.6 B, driven by the tariff response and infrastructure investment. Ontario projects a return to a $0.2 B surplus in 2027-28 — contingent on economic growth materializing." },
-    { terme: "Net debt-to-GDP", def: "Ontario's accumulated net debt as a percentage of annual economic output. Projected at 37.9% in 2025-26 — below the government's 40% target ceiling. A key measure for credit rating agencies and interprovincial comparisons." },
-    { terme: "Protecting Ontario Account", def: "A new $5 B strategic fund created in Budget 2025 to support businesses facing significant disruption from US tariffs. Works alongside federal programs as a backstop for businesses that have exhausted other available support." },
-    { terme: "Ontario Made Manufacturing Investment Tax Credit (OMMITC)", def: "A refundable tax credit for Ontario manufacturers investing in buildings, machinery and equipment used in Ontario manufacturing. Enhanced in Budget 2025 with +$1.3 B over 3 years and expanded to cover more investment types." },
-    { terme: "Ring of Fire", def: "A mineral-rich area in Northern Ontario's Far North containing significant chromite, nickel, copper and platinum group metals. Budget 2025 commits to cut development timelines from 15+ years to under 5 through regulatory reform." },
-    { terme: "One Fare", def: "Ontario's transit fare integration program. Commuters can travel across multiple systems (GO, TTC, and participating local transit) on a single fare — saving the average daily user approximately $1,600 per year." },
-    { terme: "Building Ontario Fund", def: "A provincial co-investment vehicle pairing government capital with private sector investment for priority projects. Expanded by $5 B in Budget 2025 for LTC, energy infrastructure and affordable housing." },
-    { terme: "WSIB (Workplace Safety and Insurance Board)", def: "Ontario's workers' compensation insurer. The $2 B in employer rebates (part of $4 B total over the past year) returns surplus funds to safe employers to help them maintain employment during tariff disruption." },
-    { terme: "Homelessness and Addiction Recovery Treatment Hubs", def: "New facilities replacing supervised drug consumption sites near schools and daycares. A fundamental policy shift from harm reduction toward recovery-oriented services. Location, capacity and service model are critical implementation details." },
-    { terme: "Capital vs. operating funding", def: "Capital funds build — hospitals, schools, transit lines. Operating funds pay for staff and programs. Governments can announce impressive capital plans while squeezing operating budgets. A new hospital needs both capital construction AND operating budget to function." },
-  ],
+glossaire: [
+{ terme: “Protect Ontario Account Investment Fund”, def: “New $4 B fund announced in Budget 2026 to invest in high-growth industries including AI, defence, advanced manufacturing, life sciences, biotechnology and critical minerals R&D. Designed to crowd in pension fund and private capital alongside provincial investment.” },
+{ terme: “One Project, One Process”, def: “Ontario’s framework to speed up approvals for major resource projects — advanced exploration, mine development and expansion. Removes duplication between provincial and federal processes. Three projects already fast-tracked: Frontier Lithium, Canada Nickel Crawford, and Kinross Great Bear.” },
+{ terme: “HST rebate (new homes)”, def: “Budget 2026’s signature housing measure: removes the full 8% provincial HST on new homes valued up to $1 million, with relief maintained for homes valued up to $1.5 million. Up to $80,000 in savings. Retroactive to March 20, 2025. Ontario pressing Ottawa to match.” },
+{ terme: “POWER Centres”, def: “Protect Ontario Workers Employment Response Centres — provincial support hubs providing transition assistance, referrals and access to Employment Ontario programs for workers affected by tariff-related layoffs. Helped nearly 15,000 workers in 2025.” },
+{ terme: “Ring of Fire”, def: “Mineral-rich area in Northern Ontario’s Far North. Budget 2026 accelerates all-season road construction by 5 years: construction starts June 2026, roads open November 2030. Supported by agreements with three First Nations and a federal co-operation agreement eliminating duplication in environmental assessments.” },
+{ terme: “Small Modular Reactor (SMR)”, def: “Compact nuclear reactors being built at Ontario’s Darlington site — the first in the G7. Four SMRs planned, which will produce enough electricity to power approximately 1.2 million homes when complete. Part of Ontario’s nuclear expansion strategy that is expected to create 150,000 jobs.” },
+{ terme: “Ontario Electricity Rebate (OER)”, def: “Provincial program that reduces electricity bills for residential and eligible non-residential consumers. The OER decreases monthly bills for a typical residential consumer by approximately $36, providing stable and predictable electricity costs.” },
+{ terme: “One Fare”, def: “Ontario’s transit fare integration program allowing GTA commuters to travel on GO Transit, TTC and participating local transit systems on a single fare. Extended for two more years in Budget 2026. Saves daily users up to $1,600 per year — $233 million saved since launch in 2024.” },
+{ terme: “Tax Action Plan”, def: “Ontario’s multi-year plan to make the province the most competitive jurisdiction in the G7. Budget 2026 measures include: small business corporate income tax rate cut by more than 30%, accelerated capital depreciation ($3.5 B relief over 4 years), and elimination of interprovincial trade barriers.” },
+{ terme: “As of Right labour mobility”, def: “First-in-Canada regulation in force since January 2026 that allows qualified workers to practice their regulated trade or profession in Ontario without requiring additional registration or re-certification from their home province. Directly addresses skilled labour shortages.” },
+],
 
-  comparaison: {
-    annee_precedente: "2024-2025",
-    elements: [
-      { label: "Deficit", avant: "-$6.0 B (2024-25 interim)", apres: "-$14.6 B", direction: "down" },
-      { label: "Net debt-to-GDP", avant: "36.3% (2024-25 forecast)", apres: "37.9%", direction: "down" },
-      { label: "Capital plan (annual)", avant: "~$25 B", apres: "$33+ B", direction: "up" },
-      { label: "Hospital capital (annual)", avant: "$3.5 B", apres: "$4.5 B", direction: "up" },
-      { label: "Real GDP growth", avant: "1.5% (2024 actual)", apres: "0.8% (2025 projected)", direction: "down" },
-      { label: "Path to balance", avant: "No firm commitment", apres: "Surplus 2027-28 ($0.2 B)", direction: "up" },
-      { label: "Business support package", avant: "None comparable", apres: "$11 B tariff response", direction: "neutral" },
-    ]
-  },
+comparaison: {
+annee_precedente: “2025-2026”,
+elements: [
+{ label: “Deficit”, avant: “-$14.6 B (2025 Budget forecast)”, apres: “-$13.8 B”, direction: “up” },
+{ label: “2025-26 actual deficit (revised)”, avant: “-$14.6 B (forecast)”, apres: “-$12.3 B (interim)”, direction: “up” },
+{ label: “Capital plan (annual)”, avant: “$33 B”, apres: “$37 B”, direction: “up” },
+{ label: “Capital plan (10-yr total)”, avant: “$200 B+”, apres: “$210 B+”, direction: “up” },
+{ label: “GDP growth 2025 (actual)”, avant: “0.8% (forecast)”, apres: “1.2% (actual)”, direction: “up” },
+{ label: “Path to balance”, avant: “2027-28”, apres: “2028-29”, direction: “down” },
+{ label: “Small business tax rate”, avant: “Standard rate”, apres: “Cut by >30%”, direction: “up” },
+{ label: “HST on new homes”, avant: “8% provincial portion”, apres: “Removed (up to $1 M)”, direction: “up” },
+]
+},
 
-  sources: {
-    plan: "https://www.ontario.ca/document/2025-ontario-budget",
-    bref: "https://www.ontario.ca/page/ontario-budget",
-  },
+sources: {
+plan: “https://www.ontario.ca/document/2026-ontario-budget”,
+bref: “https://www.ontario.ca/page/ontario-budget”,
+},
 
-  notebook: {
-    url: "",
-    label: "Explore the Ontario Budget Notebook",
-    note: "NotebookLM by Google · Free · Google account required",
-  },
+notebook: {
+url: “”,
+label: “Explore the Ontario Budget Notebook”,
+note: “NotebookLM by Google · Free · Google account required”,
+},
 };
